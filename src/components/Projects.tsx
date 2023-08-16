@@ -38,7 +38,7 @@ const Project = () => {
     },
     {
       img: project5,
-      name: "Online Medical Services  App",
+      name: "Online Medical Services",
       github_link: "https://github.com/ikram9820/medicalapi.git",
       live_link: "www.google.com",
     },
@@ -51,12 +51,12 @@ const Project = () => {
   ];
   return (
     <section id="projects">
-      <div className="flex justify-center text-4xl font-semibold gap-2">
+      <div className="flex justify-center mt-8 text-4xl font-semibold gap-2">
         <h3>My</h3>
         <h3 className="text-cyan-600">Projects</h3>
       </div>
       <p className="text-gray-400 mt-3 text-lg flex justify-center">
-        My awesome work
+        My work
       </p>
       <br />
 
@@ -74,14 +74,16 @@ const Project = () => {
             key={i}
             className="h-fit w-full p-4 bg-slate-700 rounded-xl"
           >
-            <img src={projects.img} alt="" className="rounded-lg" />
+            <div className="w-62 h-52">
+              <img src={projects.img} alt="" className="rounded-lg w-full h-full object-cover " />
+            </div>
             <h3 className="text-xl my-4">{projects.name}</h3>
             <div className="flex md:flex-row flex-col items-center justify-center gap-3">
               <a
                 href={projects.github_link}
                 target="_blank"
                 rel="noreferrer"
-                className="text-cyan-600 bg-gray-800 rounded-full px-2 py-1 flex w-32 justify-center"
+                className="text-cyan-600 bg-gray-800 rounded-full px-2 mb-4 py-1 flex w-32 justify-center"
               >
                 Github
               </a>

@@ -24,7 +24,7 @@ const About = () => {
                 and effective solutions for a variety of projects. I'm also   eager to learn new technologies 
                 for skill enhancement.
                 </p>
-                <ul className="mt-10 flex items-center justify-center md:gap-48 gap-6">
+                <ul className="mt-10 mx-4 flex items-center justify-center md:gap-48 gap-6">
                     {info.map((content,i)=>(
                         <li key={i}>
                             <div className="flex-col">

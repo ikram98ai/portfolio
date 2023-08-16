@@ -28,15 +28,15 @@ const Navbar = () => {
     return(
         <nav
         className={`fixed w-full z-[999] justify-between flex  ${
-            sticky ? "bg-white/60 text-gray-900" : "text-white"
+            sticky ? "bg-black/60 text-gray-100" : "text-white"
           }`}
         >
             <h4 className="text-xl font-bold mx-7 my-3">Ikram</h4>
 
             <ul
              className={`${
-                sticky ? "md:bg-white/0" : "bg-white"
-              } text-gray-900 hidden px-10 font-medium rounded-bl-full items-center md:flex gap-16 py-5 text-lg`}      
+                sticky ? "md:bg-white/0" : "bg-black"
+              } text-gray-100 hidden px-10 font-medium rounded-bl-full items-center md:flex gap-16 py-5 text-lg`}      
             >
                 {menuLinks.map((menu:MenuLink,i:number) =>(
                     <li key={i} className="hover:text-cyan-600" >
@@ -47,9 +47,9 @@ const Navbar = () => {
             
             <BiMenu
                 onClick = {() =>setOpen(!open)}
-                className ={`z-[999] ${open ? "text-gray-900" : "text-gray-100"} text-3xl md:hidden m-5`}
+                className ={`z-[999] ${open ? "text-gray-100" : "text-gray-100"} text-3xl md:hidden m-5`}
             />
-            <ul className={` flex flex-col justify-center gap-10 items-center text-lg md:hidden text-gray-900 absolute w-2/3 h-screen px-7 font-medium bg-white top-0 duration-300 ${open ? "right-0" : "right-[-999px]" }`}>
+            <ul className={` flex flex-col justify-center gap-10 items-center text-lg md:hidden text-gray-100 absolute w-2/3 h-screen px-7 font-medium bg-black/80 top-0 duration-300 ${open ? "right-0" : "right-[-999px]" }`}>
                 {menuLinks?.map((menu:MenuLink,i:number)=>(
                     <li key={i}
                     onClick={() => setOpen(false)}
