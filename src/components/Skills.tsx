@@ -1,4 +1,4 @@
-import { FaCode, FaGit, FaDocker,FaBootstrap, FaPython, FaDatabase } from "react-icons/fa";
+import { FaCode, FaGit, FaDocker, FaPython, FaDatabase } from "react-icons/fa";
 import { DiDjango} from "react-icons/di";
 const Skills = () => {
   const skills = [
