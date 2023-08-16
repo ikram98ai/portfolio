@@ -1,6 +1,5 @@
 import hero from "../assets/images/hero.png";
 import { FaFacebook,FaLinkedin,FaTwitter,FaGithub} from "react-icons/fa";
-import {IconType} from "react-icons/lib"
 
 const Hero = () =>{
     const social_media = [
