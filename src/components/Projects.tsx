@@ -88,14 +88,7 @@ const Project = () => {
               >
                 Github
               </a>
-              {/* <a
-                href={projects.live_link}
-                rel="noreferrer"
-                target="_blank"
-                className="text-cyan-600 flex rounded-full bg-gray-800 px-2 py-1 w-32 justify-center"
-              >
-                Live Demo
-              </a> */}
+           
             </div>
           </SwiperSlide>
         ))}
