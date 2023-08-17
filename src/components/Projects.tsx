@@ -9,6 +9,8 @@ import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
+import { useState } from "react";
+import ImageModal from "./ImageModal";
 
 const Project = () => {
   const projects = [
@@ -49,15 +51,14 @@ const Project = () => {
       live_link: "www.google.com",
     },
   ];
+
+  const [imageUrl, setImageUrl] =useState("")
   return (
     <section id="projects">
-      <div className="flex justify-center mt-8 text-4xl font-semibold gap-2">
+      <div className="flex justify-center my-16 text-4xl font-semibold gap-2">
         <h3>My</h3>
         <h3 className="text-cyan-600">Projects</h3>
       </div>
-      <p className="text-gray-400 mt-3 text-lg flex justify-center">
-        My work
-      </p>
       <br />
 
       <Swiper
@@ -69,18 +70,18 @@ const Project = () => {
         modules={[Pagination, Autoplay]}
         className="flex max-w-3xl gap-6 px-5 mx-auto items-center justify-center lg:w-2/3 w-full"
       >
-        {projects?.map((projects, i) => (
+        {projects?.map((project, i) => (
           <SwiperSlide
             key={i}
             className="h-fit w-full p-4 bg-slate-700 rounded-xl"
           >
             <div className="w-62 h-52">
-              <img src={projects.img} alt="" className="rounded-lg w-full h-full object-cover " />
+              <img onClick={()=> setImageUrl(project.img)} src={project.img} alt="" className="rounded-lg w-full h-full object-cover " />
             </div>
-            <h3 className="text-xl my-4">{projects.name}</h3>
+            <h3 className="text-xl my-4">{project.name}</h3>
             <div className="flex md:flex-row flex-col items-center justify-center gap-3">
               <a
-                href={projects.github_link}
+                href={project.github_link}
                 target="_blank"
                 rel="noreferrer"
                 className="text-cyan-600 bg-gray-800 rounded-full px-2 mb-4 py-1 flex w-32 justify-center"
@@ -99,6 +100,8 @@ const Project = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      {imageUrl && <ImageModal imageUrl={imageUrl} setImageUrl={setImageUrl} />}
+
     </section>
   );
 };

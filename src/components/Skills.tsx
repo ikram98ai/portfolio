@@ -8,10 +8,10 @@ const Skills = () => {
   const skills = [
     { icon: <FaPython />,name:"Python", skill:"Programming", level: "Expert" },
     { icon: <SiDjango />,name:"Django", skill:"Web Development",level: "Expert" },
-    { icon: <DiPostgresql />,name:"PostgreSQL", skill:"Database Designing",level: "intermediate" },
+    { icon: <DiPostgresql />,name:"PostgreSQL", skill:"Database System",level: "Intermediate" },
+    { icon: <SiPytorch />,name:"Pytorch", skill:"NLP",level: "interme diate" },
     { icon: <BsGit />,name:"Git", skill:"Version Control",level: "beginner" },
     { icon: <FaDocker />,name:"Docker", skill:"Containerization",level: "beginner" },
-    { icon: <SiPytorch />,name:"Pytorch", skill:"Machine Learning",level: "beginner" },
   ];
   return (
     <section
@@ -22,7 +22,6 @@ const Skills = () => {
         <h3>My</h3>
         <h3 className="text-cyan-600">Skills</h3>
       </div>
-      <p className="text-gray-400 mt-3 text-lg">My Knowledge</p>
       <ul className="flex items-center justify-center mt-12 gap-10 flex-wrap">
         {skills?.map((skill, i) => (
           <li key={i}>
