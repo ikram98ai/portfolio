@@ -5,7 +5,7 @@ const About = () => {
         count:string
     };
     const info:Info[] = [
-        {text:"Years experience", count:"1"},
+        {text:"Years experience", count:"2"},
         {text:"Projects completed", count:"6"},
         {text:"Companies Work", count:"2"},
     ];
