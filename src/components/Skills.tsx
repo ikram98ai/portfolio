@@ -1,13 +1,14 @@
-import { FaCode, FaGit, FaDocker, FaPython, FaDatabase } from "react-icons/fa";
+import {FaGit, FaDocker, FaPython, FaDatabase } from "react-icons/fa";
 import { DiDjango} from "react-icons/di";
+import { SiPytorch} from "react-icons/si";
 const Skills = () => {
   const skills = [
-    { icon: <FaCode />, level: "Expert" },
     { icon: <FaPython />, level: "Expert" },
     { icon: <DiDjango />, level: "Expert" },
     { icon: <FaDatabase />, level: "intermediate" },
     { icon: <FaGit />, level: "beginner" },
     { icon: <FaDocker />, level: "beginner" },
+    { icon: <SiPytorch />, level: "beginner" },
   ];
   return (
     <section
