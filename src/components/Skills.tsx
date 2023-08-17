@@ -5,9 +5,9 @@ const Skills = () => {
     { icon: <FaCode />, level: "Expert" },
     { icon: <FaPython />, level: "Expert" },
     { icon: <DiDjango />, level: "Expert" },
-    { icon: <FaDatabase />, level: "Intermidate" },
-    { icon: <FaGit />, level: "Beginer" },
-    { icon: <FaDocker />, level: "Beginer" },
+    { icon: <FaDatabase />, level: "intermediate" },
+    { icon: <FaGit />, level: "beginner" },
+    { icon: <FaDocker />, level: "beginner" },
   ];
   return (
     <section
