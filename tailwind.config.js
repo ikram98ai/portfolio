@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         Poppins: "Poppins",
       },
+      fontSize: {
+        'xxs': '0.5rem', // Adjust the size as needed
+      },
   
     },
   },

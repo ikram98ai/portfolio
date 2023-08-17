@@ -1,14 +1,17 @@
-import {FaGit, FaDocker, FaPython, FaDatabase } from "react-icons/fa";
-import { DiDjango} from "react-icons/di";
-import { SiPytorch} from "react-icons/si";
+import {FaGit, FaDocker, FaPython } from "react-icons/fa";
+import { DiPostgresql} from "react-icons/di";
+import { SiPytorch, SiDjango} from "react-icons/si";
+import { BsGit} from "react-icons/bs";
+
+
 const Skills = () => {
   const skills = [
-    { icon: <FaPython />, level: "Expert" },
-    { icon: <DiDjango />, level: "Expert" },
-    { icon: <FaDatabase />, level: "intermediate" },
-    { icon: <FaGit />, level: "beginner" },
-    { icon: <FaDocker />, level: "beginner" },
-    { icon: <SiPytorch />, level: "beginner" },
+    { icon: <FaPython />,name:"Python", level: "Expert" },
+    { icon: <SiDjango />,name:"Django", level: "Expert" },
+    { icon: <DiPostgresql />,name:"PostgreSQL", level: "intermediate" },
+    { icon: <BsGit />,name:"Git", level: "beginner" },
+    { icon: <FaDocker />,name:"Docker", level: "beginner" },
+    { icon: <SiPytorch />,name:"Pytorch", level: "beginner" },
   ];
   return (
     <section
@@ -24,7 +27,8 @@ const Skills = () => {
         {skills?.map((skill, i) => (
           <li key={i}>
             <div className="text-5xl flex justify-center">{skill.icon}</div>
-            <div className="text-sm font-bold">{skill.level}</div>
+            <div className="text-sm font-bold">{skill.name}</div>
+            <div className="text-xxs font-bold text-gray-500">{skill.level}</div>
           </li>
         ))}
       </ul>
