@@ -10,7 +10,7 @@ const ImageModal = ({ imageUrl,setImageUrl }:Props) => {
         {/* <button className="absolute top-2 right-2 text-white text-xl" onClick={onClose}>
           &times;
         </button> */}
-        <img src={imageUrl}  alt="Full-size" className="max-w-4xl" />
+        <img src={imageUrl}  alt="Full-size" className="w-full sm:max-w-xs md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto h-auto" />
       </div>
     </div>
   );
