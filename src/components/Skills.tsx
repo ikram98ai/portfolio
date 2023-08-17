@@ -1,4 +1,4 @@
-import {FaGit, FaDocker, FaPython } from "react-icons/fa";
+import { FaDocker, FaPython } from "react-icons/fa";
 import { DiPostgresql} from "react-icons/di";
 import { SiPytorch, SiDjango} from "react-icons/si";
 import { BsGit} from "react-icons/bs";

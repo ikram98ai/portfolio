@@ -10,7 +10,7 @@ interface MenuLink  {
 const menuLinks:MenuLink[] = [
    { name:"HOME", link:"#home"},
    { name:"ABOUT", link:"#about"},
-   { name:"SKILLS", link:"#Skills"},
+   { name:"SKILLS", link:"#skills"},
    { name:"PROJECTS", link:"#projects"},
    { name:"CONTACT", link:"#contact"}
 ]
