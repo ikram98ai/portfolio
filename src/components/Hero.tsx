@@ -18,12 +18,7 @@ const Hero = () =>{
         {icon: <FaFacebook/>,link:"https://web.facebook.com/profile.php?id=100094423407781"}
     ]
 
-    const handleContactClick = () => {
-        const contactSection = document.querySelector("#contact");
-        if (contactSection){
-            contactSection.scrollIntoView();
-        }
-    }
+
 
     return(
         <section id="home"
@@ -38,13 +33,13 @@ const Hero = () =>{
 
 
                
-         <ul className="flex flex-col gap-7 list-none">
+         <ul className="flex flex-col mt-8 gap-4 list-none">
             {contact_info?.map((contact, i) => (
               <li
                 key={i}
                 className="flex flex-row text-left gap-4 flex-wrap items-center"
               >
-                <div className="min-w-[3.5rem] text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
+                <div className="min-w-[2.5rem] text-2xl min-h-[2.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
                    {contact.icon}
                 </div>
                 <div className="md:text-base text-sm break-words">

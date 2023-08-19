@@ -68,7 +68,7 @@ const Project = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         modules={[Pagination, Autoplay]}
-        className="flex max-w-3xl gap-6 px-5 mx-auto items-center justify-center lg:w-2/3 w-full"
+        className="flex max-w-3xl gap-6 mb-8 px-5 mx-auto items-center justify-center lg:w-2/3 w-full"
       >
         {projects?.map((project, i) => (
           <SwiperSlide
