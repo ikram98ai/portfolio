@@ -12,7 +12,7 @@ const About = () => {
 
     return (
         <section id="about" className="pb-10 text-white">
-            <div className="text-4xl font-semibold mt-8 flex justify-center gap-2">
+            <div className="text-4xl font-semibold  flex justify-center gap-2">
                 <h3>About</h3>
                 <h3 className="text-cyan-600">Me</h3>
             </div>

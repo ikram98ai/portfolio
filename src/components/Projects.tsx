@@ -18,44 +18,44 @@ const Project = () => {
       img: project1,
       name: "DataScince App",
       github_link: "https://github.com/ikram9820/datalab.git",
-      live_link: "www.google.com",
+    
     },
     {
       img: project2,
       name: "Online Utility Store App",
       github_link: "https://github.com/ikram9820/utstore.git",
-      live_link: "www.google.com",
+      
     },
     {
       img: project3,
-      name: "Book Sharing  App",
+      name: "Book Sharing App (ai-powered)",
       github_link: "https://github.com/ikram9820/bookishpdf.git",
-      live_link: "www.google.com",
+  
     },
     {
       img: project4,
-      name: "Blog App",
+      name: "Blog Social App",
       github_link: "https://github.com/ikram9820/EpicExplora.git",
-      live_link: "www.google.com",
+    
     },
     {
       img: project5,
       name: "Online Medical Services",
       github_link: "https://github.com/ikram9820/medicalapi.git",
-      live_link: "www.google.com",
+    
     },
     {
       img: project6,
-      name: "Chat app",
+      name: "Chat Api Services",
       github_link: "https://github.com/ikram9820/alphaapi.git",
-      live_link: "www.google.com",
+  
     },
   ];
 
   const [imageUrl, setImageUrl] =useState("")
   return (
     <section id="projects">
-      <div className="flex justify-center my-16 text-4xl font-semibold gap-2">
+      <div className="flex justify-center mt-16 text-4xl font-semibold gap-2">
         <h3>My</h3>
         <h3 className="text-cyan-600">Projects</h3>
       </div>

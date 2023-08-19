@@ -19,7 +19,7 @@ const Hero = () =>{
 
     return(
         <section id="home"
-        className="min-h-screen flex py-10 gap-10 px-7 md:flex-row flex-col items-center"
+        className="min-h-screen flex pt-10 gap-10 px-7 md:flex-row flex-col items-center"
         >
             <img src={hero} alt="Ikram's Photo" className="w-96 h-96 rounded-full object-cover" />
 
