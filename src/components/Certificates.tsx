@@ -60,7 +60,7 @@ const Certificate = () => {
                 rel="noreferrer"
                 className="text-cyan-600 bg-gray-800 rounded-full px-2 mb-4 py-1 flex w-32 justify-center"
               >
-                Course
+                Verify
               </a>
            
             </div>
