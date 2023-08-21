@@ -56,7 +56,6 @@ const Project = () => {
   return (
     <section id="projects">
       <div className="flex justify-center mt-16 text-4xl font-semibold gap-2">
-        <h3>My</h3>
         <h3 className="text-cyan-600">Projects</h3>
       </div>
       <br />
