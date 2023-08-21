@@ -9,7 +9,7 @@ const Hero = () =>{
     const social_media = [
         {icon: <FaGithub/>,link:"https://github.com/ikram9820/"},
         {icon: <FaLinkedin/>,link:"https://www.linkedin.com/in/ikram-khan-929658249/"},
-        {icon: <FaTwitter/>,link:"https://twitter.com/Ikram9820"},
+        {icon: <FaTwitter/>,link:"https://twitter.com/ikramkhan9820"},
         {icon: <FaFacebook/>,link:"https://web.facebook.com/profile.php?id=100094423407781"},
         {icon: <IoLogoWhatsapp/>, link:"https://wa.me/+923020185186"},
         {icon: <MdEmail/>, link: "mailto:ikkhan.se@gmail.com"}
