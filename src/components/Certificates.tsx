@@ -4,6 +4,7 @@ import python_google from "../assets/images/python_google.jpeg";
 import python_meta from "../assets/images/python_meta.jpeg";
 import database_meta from "../assets/images/database_meta.jpeg";
 import django_meta from "../assets/images/django_meta.jpeg";
+import git_meta from "../assets/images/git_meta.jpeg";
 
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -33,15 +34,21 @@ const Certificate = () => {
     
     },
     {
-      img: django_meta,
-      name: "Django Web Framework",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/23PY22KUYY9G",
+      img: git_meta,
+      name: "Version Control",
+      course_link: "https://www.coursera.org/account/accomplishments/certificate/KLGQF9X86BF6",
     
     },
     {
       img: database_meta,
       name: "Introduction to Databases for Back-End Development",
       course_link: "https://www.coursera.org/account/accomplishments/certificate/SS245XANSZD5",
+    
+    },
+    {
+      img: django_meta,
+      name: "Django Web Framework",
+      course_link: "https://www.coursera.org/account/accomplishments/certificate/23PY22KUYY9G",
     
     },
   
