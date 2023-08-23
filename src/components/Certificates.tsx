@@ -1,6 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import backend_meta from "../assets/images/backend_meta.jpeg";
 import python_google from "../assets/images/python_google.jpeg";
+import python_meta from "../assets/images/python_meta.jpeg";
+import database_meta from "../assets/images/database_meta.jpeg";
+import django_meta from "../assets/images/django_meta.jpeg";
 
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -12,18 +15,35 @@ import ImageModal from "./ImageModal";
 const Certificate = () => {
   const certificates = [
     {
-        img: python_google,
-        name: "Crash Course on Python",
-        course_link: "https://coursera.org/verify/8KLJF35RTPDX",
+      img: python_meta,
+      name: "Programming in Python",
+      course_link: "https://www.coursera.org/account/accomplishments/certificate/WFH8C72Q2KNF",
+      
+    },
+    {
+      img: python_google,
+      name: "Crash Course on Python",
+      course_link: "https://www.coursera.org/account/accomplishments/certificate/8KLJF35RTPDX",
         
       },
     {
       img: backend_meta,
       name: "Introduction to Back-End Development",
-      course_link: "https://coursera.org/verify/U2PTE3J3A4RV",
+      course_link: "https://www.coursera.org/account/accomplishments/certificate/U2PTE3J3A4RV",
     
     },
-  
+    {
+      img: django_meta,
+      name: "Django Web Framework",
+      course_link: "https://www.coursera.org/account/accomplishments/certificate/23PY22KUYY9G",
+    
+    },
+    {
+      img: database_meta,
+      name: "Introduction to Databases for Back-End Development",
+      course_link: "https://www.coursera.org/account/accomplishments/certificate/SS245XANSZD5",
+    
+    },
   
   ];
 
