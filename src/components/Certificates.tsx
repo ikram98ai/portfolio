@@ -1,15 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import python_google from "../assets/images/python_google.jpeg";
 import meta_backend from "../assets/images/meta-backend.jpeg";
-import backend_meta from "../assets/images/backend_meta.jpeg";
-import python_meta from "../assets/images/python_meta.jpeg";
-import database_meta from "../assets/images/database_meta.jpeg";
-import django_meta from "../assets/images/django_meta.jpeg";
-import git_meta from "../assets/images/git_meta.jpeg";
-import api_meta from "../assets/images/api_meta.jpeg";
-import fullstack_meta from "../assets/images/fullstack_meta.jpeg";
-import code_meta from "../assets/images/code_meta.jpeg";
-import capstone_meta from "../assets/images/capstone_meta.jpeg";
+// import backend_meta from "../assets/images/backend_meta.jpeg";
+// import python_meta from "../assets/images/python_meta.jpeg";
+// import database_meta from "../assets/images/database_meta.jpeg";
+// import django_meta from "../assets/images/django_meta.jpeg";
+// import git_meta from "../assets/images/git_meta.jpeg";
+// import api_meta from "../assets/images/api_meta.jpeg";
+// import fullstack_meta from "../assets/images/fullstack_meta.jpeg";
+// import code_meta from "../assets/images/code_meta.jpeg";
+// import capstone_meta from "../assets/images/capstone_meta.jpeg";
 
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -32,60 +32,60 @@ const Certificate = () => {
       course_link: "https://www.coursera.org/account/accomplishments/specialization/certificate/4AKWQ29RWJVY",
       
     },
-    {
-      img: python_meta,
-      name: "Programming in Python",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/WFH8C72Q2KNF",
+    // {
+    //   img: python_meta,
+    //   name: "Programming in Python",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/WFH8C72Q2KNF",
       
-    },
-    {
-      img: backend_meta,
-      name: "Introduction to Back-End Development",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/U2PTE3J3A4RV",
+    // },
+    // {
+    //   img: backend_meta,
+    //   name: "Introduction to Back-End Development",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/U2PTE3J3A4RV",
     
-    },
-    {
-      img: git_meta,
-      name: "Version Control",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/KLGQF9X86BF6",
+    // },
+    // {
+    //   img: git_meta,
+    //   name: "Version Control",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/KLGQF9X86BF6",
     
-    },
-    {
-      img: database_meta,
-      name: "Introduction to Databases for Back-End Development",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/SS245XANSZD5",
+    // },
+    // {
+    //   img: database_meta,
+    //   name: "Introduction to Databases for Back-End Development",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/SS245XANSZD5",
     
-    },
-    {
-      img: django_meta,
-      name: "Django Web Framework",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/23PY22KUYY9G",
+    // },
+    // {
+    //   img: django_meta,
+    //   name: "Django Web Framework",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/23PY22KUYY9G",
     
-    },
-    {
-      img: fullstack_meta,
-      name: "The Full Stack",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/GZ5P4678LN4M",
+    // },
+    // {
+    //   img: fullstack_meta,
+    //   name: "The Full Stack",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/GZ5P4678LN4M",
     
-    },
-    {
-      img: api_meta,
-      name: "APIs",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/EJQSYYSM8MQW",
+    // },
+    // {
+    //   img: api_meta,
+    //   name: "APIs",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/EJQSYYSM8MQW",
     
-    },
-    {
-      img: capstone_meta,
-      name: "Back-End Developer Capstone",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/W2M6EGMQEDVD",
+    // },
+    // {
+    //   img: capstone_meta,
+    //   name: "Back-End Developer Capstone",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/W2M6EGMQEDVD",
     
-    },
-    {
-      img: code_meta,
-      name: "Coding Interview Preparation",
-      course_link: "https://www.coursera.org/account/accomplishments/certificate/7E56K3VLNHGL",
+    // },
+    // {
+    //   img: code_meta,
+    //   name: "Coding Interview Preparation",
+    //   course_link: "https://www.coursera.org/account/accomplishments/certificate/7E56K3VLNHGL",
   
-    },
+    // },
   
   ];
 
