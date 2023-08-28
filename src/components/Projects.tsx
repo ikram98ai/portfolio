@@ -22,7 +22,7 @@ const Project = () => {
     },
     {
       img: project3,
-      name: "Book Sharing App (ai-powered)",
+      name: "Book Sharing App",
       github_link: "https://github.com/ikram9820/bookishpdf.git",
   
     },
