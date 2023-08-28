@@ -21,16 +21,16 @@ const Project = () => {
     
     },
     {
-      img: project2,
-      name: "Online Utility Store App",
-      github_link: "https://github.com/ikram9820/utstore.git",
-      
-    },
-    {
       img: project3,
       name: "Book Sharing App (ai-powered)",
       github_link: "https://github.com/ikram9820/bookishpdf.git",
   
+    },
+    {
+      img: project2,
+      name: "Online Utility Store App",
+      github_link: "https://github.com/ikram9820/utstore.git",
+      
     },
     {
       img: project4,
