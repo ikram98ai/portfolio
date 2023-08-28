@@ -1,4 +1,4 @@
-import hero from "../assets/images/hero.png";
+import hero from "../assets/images/hero.jpg";
 import { FaFacebook,FaLinkedin,FaTwitter,FaGithub} from "react-icons/fa";
 import {MdEmail} from "react-icons/md"  
 import {IoLogoWhatsapp} from "react-icons/io"  
@@ -26,7 +26,7 @@ const Hero = () =>{
             <div className="felx-1 flex-col">
                 <h1 className="text-cyan-600 md:text-6xl text-5xl">Hello!</h1>
                 <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white fond-bold">My Name Is Ikram Khan</h1>
-                <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400">FullStack Developer</h4>
+                <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400">Software Engineer</h4>
 
                 
                 <ul className="mt-8 text-3xl flex text-gray-600 gap-5">
