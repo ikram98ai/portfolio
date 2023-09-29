@@ -1,5 +1,5 @@
 import hero from "../assets/images/hero.jpg";
-import { FaFacebook,FaLinkedin,FaTwitter,FaGithub} from "react-icons/fa";
+import { FaLinkedin,FaTwitter,FaGithub} from "react-icons/fa";
 import {MdEmail} from "react-icons/md"  
 import {IoLogoWhatsapp} from "react-icons/io"  
     
@@ -9,8 +9,7 @@ const Hero = () =>{
     const social_media = [
         {icon: <FaGithub/>,link:"https://github.com/ikram9820/"},
         {icon: <FaLinkedin/>,link:"https://www.linkedin.com/in/ikram-khan-929658249/"},
-        {icon: <FaTwitter/>,link:"https://twitter.com/ikramkhan9820"},
-        {icon: <FaFacebook/>,link:"https://web.facebook.com/profile.php?id=100094423407781"},
+        {icon: <FaTwitter/>,link:"https://twitter.com/ikramkhan_se"},
         {icon: <IoLogoWhatsapp/>, link:"https://wa.me/+923020185186"},
         {icon: <MdEmail/>, link: "mailto:ikkhan.se@gmail.com"}
     ]

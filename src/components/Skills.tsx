@@ -9,7 +9,7 @@ const Skills = () => {
     { icon: <FaPython />,name:"Python", skill:"Programming", level: "Expert" },
     { icon: <SiDjango />,name:"Django", skill:"Web Development",level: "Expert" },
     { icon: <DiPostgresql />,name:"PostgreSQL", skill:"Database System",level: "Intermediate" },
-    { icon: <SiPytorch />,name:"Pytorch", skill:"NLP",level: "Intermediate" },
+    { icon: <SiPytorch />,name:"Pytorch", skill:"Machine Learning",level: "Intermediate" },
     { icon: <BsGit />,name:"Git", skill:"Version Control",level: "Beginner" },
     { icon: <FaDocker />,name:"Docker", skill:"Containerization",level: "Beginner" },
   ];
