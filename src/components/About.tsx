@@ -5,8 +5,8 @@ const About = () => {
   }
   const info: Info[] = [
     { text: "Years experience", count: "2" },
-    { text: "Projects completed", count: "6" },
-    { text: "Certificates", count: "2" },
+    { text: "Projects completed", count: "7" },
+    { text: "Certificates", count: "3" },
   ];
 
   return (
