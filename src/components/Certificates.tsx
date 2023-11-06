@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import ml from "../assets/images/ml.jpeg";
 import meta_backend from "../assets/images/meta-backend.jpeg";
+import meta_frontend from "../assets/images/meta-frontend.jpeg";
 
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -12,21 +13,26 @@ import ImageModal from "./ImageModal";
 const Certificate = () => {
   const certificates = [
     {
+      img: meta_frontend,
+      name: "Meta Front-End Developer Specialization",
+      course_link:
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/FSA8PEA7RTFR",
+    },
+    {
       img: ml,
       name: "Machine Learning Specialization",
-      course_link: "https://www.coursera.org/account/accomplishments/specialization/certificate/DJ3DNR43P5ZG",
-      
+      course_link:
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/DJ3DNR43P5ZG",
     },
     {
       img: meta_backend,
       name: "Meta Back-End Developer Specialization",
-      course_link: "https://www.coursera.org/account/accomplishments/specialization/certificate/4AKWQ29RWJVY",
-      
+      course_link:
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/4AKWQ29RWJVY",
     },
-  
   ];
 
-  const [imageUrl, setImageUrl] =useState("")
+  const [imageUrl, setImageUrl] = useState("");
   return (
     <section id="certificates">
       <div className="flex justify-center mt-16 text-4xl font-semibold gap-2">
@@ -49,7 +55,12 @@ const Certificate = () => {
             className="h-fit w-full p-4 bg-slate-700 rounded-xl"
           >
             <div className="w-62 h-52">
-              <img onClick={()=> setImageUrl(certificate.img)} src={certificate.img} alt="" className="rounded-lg w-full h-full object-cover " />
+              <img
+                onClick={() => setImageUrl(certificate.img)}
+                src={certificate.img}
+                alt=""
+                className="rounded-lg w-full h-full object-cover "
+              />
             </div>
             <h3 className="text-lg truncate my-4">{certificate.name}</h3>
             <div className="flex md:flex-row flex-col items-center justify-center gap-3">
@@ -61,13 +72,11 @@ const Certificate = () => {
               >
                 Visit
               </a>
-           
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
       {imageUrl && <ImageModal imageUrl={imageUrl} setImageUrl={setImageUrl} />}
-
     </section>
   );
 };

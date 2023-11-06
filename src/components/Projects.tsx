@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import project0 from "../assets/images/p0.png";
 import project1 from "../assets/images/p1.png";
 import project2 from "../assets/images/p2.png";
 import project3 from "../assets/images/p3.png";
@@ -15,44 +16,43 @@ import ImageModal from "./ImageModal";
 const Project = () => {
   const projects = [
     {
+      img: project0,
+      name: "Issue Tracker App",
+      github_link: "https://github.com/ikram9820/issue-tracker-next.git",
+    },
+    {
       img: project1,
       name: "DataScince App",
       github_link: "https://github.com/ikram9820/datalab.git",
-    
     },
     {
       img: project3,
       name: "Book Sharing App",
       github_link: "https://github.com/ikram9820/bookishpdf.git",
-  
     },
     {
       img: project2,
       name: "Online Utility Store App",
       github_link: "https://github.com/ikram9820/utstore.git",
-      
     },
     {
       img: project4,
       name: "Blog Social App",
       github_link: "https://github.com/ikram9820/EpicExplora.git",
-    
     },
     {
       img: project5,
       name: "Online Medical Services",
       github_link: "https://github.com/ikram9820/medicalapi.git",
-    
     },
     {
       img: project6,
       name: "Chat Api Services",
       github_link: "https://github.com/ikram9820/alphaapi.git",
-  
     },
   ];
 
-  const [imageUrl, setImageUrl] =useState("")
+  const [imageUrl, setImageUrl] = useState("");
   return (
     <section id="projects">
       <div className="flex justify-center mt-16 text-4xl font-semibold gap-2">
@@ -75,7 +75,12 @@ const Project = () => {
             className="h-fit w-full p-4 bg-slate-700 rounded-xl"
           >
             <div className="w-62 h-52">
-              <img onClick={()=> setImageUrl(project.img)} src={project.img} alt="" className="rounded-lg w-full h-full object-cover " />
+              <img
+                onClick={() => setImageUrl(project.img)}
+                src={project.img}
+                alt=""
+                className="rounded-lg w-full h-full object-cover "
+              />
             </div>
             <h3 className="text-xl my-4">{project.name}</h3>
             <div className="flex md:flex-row flex-col items-center justify-center gap-3">
@@ -87,13 +92,11 @@ const Project = () => {
               >
                 Github
               </a>
-           
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
       {imageUrl && <ImageModal imageUrl={imageUrl} setImageUrl={setImageUrl} />}
-
     </section>
   );
 };
