@@ -1,17 +1,45 @@
-import { FaDocker, FaPython } from "react-icons/fa";
-import { DiPostgresql} from "react-icons/di";
-import { SiPytorch, SiDjango} from "react-icons/si";
-import { BsGit} from "react-icons/bs";
-
+import { FaPython } from "react-icons/fa";
+import { DiPostgresql } from "react-icons/di";
+import { SiPytorch, SiDjango, SiReact, SiTypescript } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
-    { icon: <FaPython />,name:"Python", skill:"Programming", level: "Expert" },
-    { icon: <SiDjango />,name:"Django", skill:"Web Development",level: "Expert" },
-    { icon: <DiPostgresql />,name:"PostgreSQL", skill:"Database System",level: "Intermediate" },
-    { icon: <SiPytorch />,name:"Pytorch", skill:"Machine Learning",level: "Intermediate" },
-    { icon: <BsGit />,name:"Git", skill:"Version Control",level: "Beginner" },
-    { icon: <FaDocker />,name:"Docker", skill:"Containerization",level: "Beginner" },
+    {
+      icon: <FaPython />,
+      name: "Python",
+      skill: "Programming",
+      level: "Expert",
+    },
+    {
+      icon: <SiDjango />,
+      name: "Django",
+      skill: "Back-end Development",
+      level: "Expert",
+    },
+    {
+      icon: <SiTypescript />,
+      name: "Typescript",
+      skill: "Programming",
+      level: "Expert",
+    },
+    {
+      icon: <SiReact />,
+      name: "React",
+      skill: "Front-end Development",
+      level: "Expert",
+    },
+    {
+      icon: <DiPostgresql />,
+      name: "PostgreSQL",
+      skill: "Database System",
+      level: "Intermediate",
+    },
+    {
+      icon: <SiPytorch />,
+      name: "Pytorch",
+      skill: "Machine Learning",
+      level: "Intermediate",
+    },
   ];
   return (
     <section
@@ -27,8 +55,12 @@ const Skills = () => {
           <li key={i}>
             <div className="text-5xl flex justify-center">{skill.icon}</div>
             <div className="text-sm font-bold">{skill.name}</div>
-            <div className="text-xxs mt-2 font-bold text-gray-500">{skill.skill}</div>
-            <div className="text-xxs font-bold text-gray-500">{skill.level}</div>
+            <div className="text-xxs mt-2 font-bold text-gray-500">
+              {skill.skill}
+            </div>
+            <div className="text-xxs font-bold text-gray-500">
+              {skill.level}
+            </div>
           </li>
         ))}
       </ul>
