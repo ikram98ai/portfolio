@@ -5,18 +5,6 @@ import { SiPytorch, SiDjango, SiReact, SiTypescript } from "react-icons/si";
 const Skills = () => {
   const skills = [
     {
-      icon: <FaPython />,
-      name: "Python",
-      skill: "Programming",
-      level: "Expert",
-    },
-    {
-      icon: <SiDjango />,
-      name: "Django",
-      skill: "Back-end Development",
-      level: "Expert",
-    },
-    {
       icon: <SiTypescript />,
       name: "Typescript",
       skill: "Programming",
@@ -28,6 +16,19 @@ const Skills = () => {
       skill: "Front-end Development",
       level: "Expert",
     },
+    {
+      icon: <FaPython />,
+      name: "Python",
+      skill: "Programming",
+      level: "Expert",
+    },
+    {
+      icon: <SiDjango />,
+      name: "Django",
+      skill: "Back-end Development",
+      level: "Expert",
+    },
+
     {
       icon: <DiPostgresql />,
       name: "PostgreSQL",
