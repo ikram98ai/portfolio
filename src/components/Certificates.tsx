@@ -18,17 +18,18 @@ const Certificate = () => {
       course_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/FSA8PEA7RTFR",
     },
-    {
-      img: ml,
-      name: "Machine Learning Specialization",
-      course_link:
-        "https://www.coursera.org/account/accomplishments/specialization/certificate/DJ3DNR43P5ZG",
-    },
+   
     {
       img: meta_backend,
       name: "Meta Back-End Developer Specialization",
       course_link:
         "https://www.coursera.org/account/accomplishments/specialization/certificate/4AKWQ29RWJVY",
+    },
+    {
+      img: ml,
+      name: "Machine Learning Specialization",
+      course_link:
+        "https://www.coursera.org/account/accomplishments/specialization/certificate/DJ3DNR43P5ZG",
     },
   ];
 
