@@ -4,8 +4,6 @@ import project1 from "../assets/images/p1.png";
 import project2 from "../assets/images/p2.png";
 import project3 from "../assets/images/p3.png";
 import project4 from "../assets/images/p4.png";
-import project5 from "../assets/images/p5.png";
-import project6 from "../assets/images/p6.png";
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
@@ -16,14 +14,14 @@ import ImageModal from "./ImageModal";
 const Project = () => {
   const projects = [
     {
-      img: project0,
-      name: "Issue Tracker App",
-      github_link: "https://github.com/ikram9820/issue-tracker-next.git",
-    },
-    {
       img: project1,
       name: "DataScince App",
       github_link: "https://github.com/ikram9820/datalab.git",
+    },
+    {
+      img: project0,
+      name: "Issue Tracker App",
+      github_link: "https://github.com/ikram9820/issue-tracker-next.git",
     },
     {
       img: project3,
@@ -39,16 +37,6 @@ const Project = () => {
       img: project4,
       name: "Blog Social App",
       github_link: "https://github.com/ikram9820/EpicExplora.git",
-    },
-    {
-      img: project5,
-      name: "Online Medical Services",
-      github_link: "https://github.com/ikram9820/medicalapi.git",
-    },
-    {
-      img: project6,
-      name: "Chat Api Services",
-      github_link: "https://github.com/ikram9820/alphaapi.git",
     },
   ];
 
@@ -82,7 +70,7 @@ const Project = () => {
                 className="rounded-lg w-full h-full object-cover "
               />
             </div>
-            <h3 className="text-xl my-4">{project.name}</h3>
+            <h3 className="text-md font-medium my-4">{project.name}</h3>
             <div className="flex md:flex-row flex-col items-center justify-center gap-3">
               <a
                 href={project.github_link}

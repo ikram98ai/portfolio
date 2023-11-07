@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import ml from "../assets/images/ml.jpeg";
-import meta_backend from "../assets/images/meta-backend.jpeg";
-import meta_frontend from "../assets/images/meta-frontend.jpeg";
+import meta_fullstack from "../assets/images/meta-full-stack.png";
 
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -13,23 +12,14 @@ import ImageModal from "./ImageModal";
 const Certificate = () => {
   const certificates = [
     {
-      img: meta_frontend,
-      name: "Meta Front-End Developer Specialization",
-      course_link:
-        "https://www.coursera.org/account/accomplishments/specialization/certificate/FSA8PEA7RTFR",
-    },
-   
-    {
-      img: meta_backend,
-      name: "Meta Back-End Developer Specialization",
-      course_link:
-        "https://www.coursera.org/account/accomplishments/specialization/certificate/4AKWQ29RWJVY",
+      img: meta_fullstack,
+      name: "Meta Full-Stack Engineer Certificate",
+      link: "https://www.credly.com/go/HgfslyMo",
     },
     {
       img: ml,
       name: "Machine Learning Specialization",
-      course_link:
-        "https://www.coursera.org/account/accomplishments/specialization/certificate/DJ3DNR43P5ZG",
+      link: "https://www.coursera.org/verify/specialization/DJ3DNR43P5ZG",
     },
   ];
 
@@ -50,9 +40,9 @@ const Certificate = () => {
         modules={[Pagination, Autoplay]}
         className="flex max-w-3xl gap-6 mb-8 px-5 mx-auto items-center justify-center lg:w-2/3 w-full"
       >
-        {certificates?.map((certificate, i) => (
+        {certificates?.map((certificate) => (
           <SwiperSlide
-            key={i}
+            key={certificate.link}
             className="h-fit w-full p-4 bg-slate-700 rounded-xl"
           >
             <div className="w-62 h-52">
@@ -63,15 +53,15 @@ const Certificate = () => {
                 className="rounded-lg w-full h-full object-cover "
               />
             </div>
-            <h3 className="text-lg truncate my-4">{certificate.name}</h3>
-            <div className="flex md:flex-row flex-col items-center justify-center gap-3">
+            <h3 className="text-md font-medium truncate my-4">{certificate.name}</h3>
+            <div className="flex md:flex-row  flex-col items-center justify-center gap-3">
               <a
-                href={certificate.course_link}
+                href={certificate.link}
                 target="_blank"
                 rel="noreferrer"
-                className="text-cyan-600 bg-gray-800 rounded-full px-2 mb-4 py-1 flex w-32 justify-center"
+                className="text-cyan-600 font bg-gray-800 rounded-full px-2 mb-4 py-1 flex w-32 justify-center"
               >
-                Visit
+                Verify
               </a>
             </div>
           </SwiperSlide>
