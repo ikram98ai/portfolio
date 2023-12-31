@@ -10,22 +10,20 @@ const Skills = () => {
       level: "Expert",
     },
     {
-      icon: <SiReact />,
-      name: "React",
-      skill: "Front-end",
-      level: "Expert",
-    },
-
-    {
       icon: <SiDjango />,
       name: "Django",
       skill: "Back-end",
       level: "Expert",
     },
-
+    {
+      icon: <SiReact />,
+      name: "React",
+      skill: "Front-end",
+      level: "Intermediate",
+    },
     {
       icon: <FaAws />,
-      name: "Amazon Web Services",
+      name: "AWS",
       skill: "Cloud Computing",
       level: "Intermediate",
     },

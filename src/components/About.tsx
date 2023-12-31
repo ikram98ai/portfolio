@@ -20,7 +20,8 @@ const About = () => {
         Innovative and detail-oriented software engineer with a BS in Software Engineering and two years of 
         hands-on experience in full-stack development. Specializing in Python, Django, and React.js, I bring 
         expertise in crafting efficient and scalable solutions. My proficiency extends to PostgreSQL, AWS Cloud, 
-        and Machine Learning, supported by certifications in Meta Full-Stack Engineering, and AWS Cloud Technical Essentials.
+        and Machine Learning, supported by certifications in Meta Full-Stack Engineering, AWS Cloud Technical Essentials, 
+        and Machine Learning specialization.
         </p>
         <ul className="mt-10 mx-4 flex items-center justify-center md:gap-48 gap-6">
           {info.map((content, i) => (
