@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import ml from "../assets/images/ml.jpeg";
+import aws from "../assets/images/aws.jpeg";
 import meta_fullstack from "../assets/images/meta-full-stack.png";
 
 import "swiper/css";
@@ -11,6 +12,11 @@ import ImageModal from "./ImageModal";
 
 const Certificate = () => {
   const certificates = [
+    {
+      img: aws,
+      name: "AWS Cloud Technical Essentials",
+      link: "https://www.coursera.org/account/accomplishments/verify/K9KYX2KHQHN5",
+    },
     {
       img: meta_fullstack,
       name: "Meta Full-Stack Engineer Certificate",

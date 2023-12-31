@@ -1,18 +1,11 @@
-import { FaPython } from "react-icons/fa";
-import { DiPostgresql } from "react-icons/di";
-import { SiPytorch, SiDjango, SiReact, SiTypescript } from "react-icons/si";
+import { FaPython,FaAws } from "react-icons/fa";
+import { SiPytorch, SiDjango, SiReact } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
     {
       icon: <FaPython />,
       name: "Python",
-      skill: "Programming",
-      level: "Expert",
-    },
-    {
-      icon: <SiTypescript />,
-      name: "Typescript",
       skill: "Programming",
       level: "Expert",
     },
@@ -31,16 +24,16 @@ const Skills = () => {
     },
 
     {
-      icon: <DiPostgresql />,
-      name: "PostgreSQL",
-      skill: "Database System",
+      icon: <FaAws />,
+      name: "Amazon Web Services",
+      skill: "Cloud Computing",
       level: "Intermediate",
     },
     {
       icon: <SiPytorch />,
       name: "Pytorch",
       skill: "Machine Learning",
-      level: "Intermediate",
+      level: "Beginner",
     },
   ];
   return (
