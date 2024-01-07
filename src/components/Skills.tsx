@@ -1,5 +1,5 @@
-import { FaPython,FaAws } from "react-icons/fa";
-import { SiPytorch, SiDjango, SiReact } from "react-icons/si";
+import { FaPython,FaAws, FaDatabase } from "react-icons/fa";
+import { SiPytorch, SiDjango  } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
@@ -12,13 +12,13 @@ const Skills = () => {
     {
       icon: <SiDjango />,
       name: "Django",
-      skill: "Back-end",
+      skill: "Web Development ",
       level: "Expert",
     },
     {
-      icon: <SiReact />,
-      name: "React",
-      skill: "Front-end",
+      icon: <FaDatabase />,
+      name: "Databases",
+      skill: "Database System",
       level: "Intermediate",
     },
     {
