@@ -12,14 +12,14 @@ import ImageModal from "./ImageModal";
 const Certificate = () => {
   const certificates = [
     {
-      img: aws,
-      name: "AWS Cloud Technical Essentials",
-      link: "https://www.coursera.org/account/accomplishments/verify/K9KYX2KHQHN5",
-    },
-    {
       img: meta,
       name: "Meta Back-End Developer Specialization",
       link: "https://www.coursera.org/account/accomplishments/specialization/4AKWQ29RWJVY",
+    },
+    {
+      img: aws,
+      name: "AWS Cloud Technical Essentials",
+      link: "https://www.coursera.org/account/accomplishments/verify/K9KYX2KHQHN5",
     },
     {
       img: ml,
