@@ -1,6 +1,6 @@
 import { FaPython, FaDatabase } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
-import { SiScikitlearn,SiGooglesheets, SiPandas } from "react-icons/si";
+import { SiScikitlearn,SiGooglesheets, SiPandas, SiTableau } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
@@ -35,6 +35,12 @@ const Skills = () => {
       level: "Intermediate",
     },
     {
+      icon: <SiTableau />,
+      name: "Tableau",
+      skill: "Data Visualization",
+      level: "Intermediate",
+    },
+    {
       icon: <SiScikitlearn />,
       name: "Scikitlearn",
       skill: "Machine Learning",
@@ -54,7 +60,7 @@ const Skills = () => {
         {skills?.map((skill, i) => (
           <li key={i}>
             <div className="text-5xl flex justify-center">{skill.icon}</div>
-            <div className="text-sm font-bold">{skill.name}</div>
+            <div className="text-sm mt-1 font-bold">{skill.name}</div>
             <div className="text-xxs mt-2 font-bold text-gray-500">
               {skill.skill}
             </div>
