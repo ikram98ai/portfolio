@@ -1,5 +1,6 @@
-import { FaPython,FaAws, FaDatabase } from "react-icons/fa";
-import { SiScikitlearn, SiDjango  } from "react-icons/si";
+import { FaPython, FaDatabase } from "react-icons/fa";
+import { TbSql } from "react-icons/tb";
+import { SiScikitlearn,SiGooglesheets, SiPandas } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
@@ -10,9 +11,15 @@ const Skills = () => {
       level: "Expert",
     },
     {
-      icon: <SiDjango />,
-      name: "Django",
-      skill: "Web Development ",
+      icon: <SiPandas />,
+      name: "Pandas",
+      skill: "Data Analysis",
+      level: "Intermediate",
+    },
+    {
+      icon: <TbSql />,
+      name: "SQL",
+      skill: "Data Analysis",
       level: "Expert",
     },
     {
@@ -22,9 +29,9 @@ const Skills = () => {
       level: "Intermediate",
     },
     {
-      icon: <FaAws />,
-      name: "AWS",
-      skill: "Cloud Computing",
+      icon: <SiGooglesheets />,
+      name: "Spreadsheets",
+      skill: "Data Analysis",
       level: "Intermediate",
     },
     {

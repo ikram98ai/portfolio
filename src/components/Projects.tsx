@@ -1,9 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import project0 from "../assets/images/p0.png";
-import project1 from "../assets/images/p1.png";
-import project2 from "../assets/images/p2.png";
-import project3 from "../assets/images/p3.png";
-import project4 from "../assets/images/p4.png";
+import ds_img from "../assets/images/ds_img.png";
+
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
@@ -14,30 +11,11 @@ import ImageModal from "./ImageModal";
 const Project = () => {
   const projects = [
     {
-      img: project1,
-      name: "DataScince App",
-      github_link: "https://github.com/ikram9820/datalab.git",
+      img: ds_img,
+      name: "Data Lab",
+      github_link: "https://github.com/ikramullahasakzai/datalab.git",
     },
-    {
-      img: project0,
-      name: "Issue Tracker App",
-      github_link: "https://github.com/ikram9820/issue-tracker-next.git",
-    },
-    {
-      img: project3,
-      name: "Book Sharing App",
-      github_link: "https://github.com/ikram9820/bookishpdf.git",
-    },
-    {
-      img: project2,
-      name: "Online Utility Store App",
-      github_link: "https://github.com/ikram9820/utstore.git",
-    },
-    {
-      img: project4,
-      name: "Blog Social App",
-      github_link: "https://github.com/ikram9820/EpicExplora.git",
-    },
+   
   ];
 
   const [imageUrl, setImageUrl] = useState("");

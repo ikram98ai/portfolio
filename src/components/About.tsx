@@ -17,11 +17,12 @@ const About = () => {
       </div>
       <div className="flex flex-col items-center md:gap-6 gap-12 max-w-6xl mx-auto text-gray-300 mt-5">
         <p className="text-justify leading-7 w-11/12 mx-auto">
-       Innovative and detail-oriented software engineer with a BS in Software Engineering and two years of hands-on experience
-       in full-stack development. Specializing in Python and Django, I bring expertise in crafting efficient and scalable solutions. My 
-       proficiency extends to Database System, AWS Cloud, and Machine Learning, supported by certifications in Meta Back-End Developer 
-       Specialization, AWS Cloud Technical Essentials and Machine Learning specialization.
-
+        Experienced Data Analyst with a focus on marketing analytics. Proficient in Python, SQL, 
+        spreadsheet manipulation, Tableau visualization, and Meta Ads Manager. Certified in Data Analytics by Google and 
+        Online Advertising by Meta. Skilled in streamlining data retrieval and manipulation processes, 
+        creating visually compelling dashboards and reports, and optimizing advertising campaigns on Meta platforms. 
+        Strong communicator able to translate complex insights into actionable recommendations, fostering a data-driven 
+        culture for informed decision-making.
         </p>
         <ul className="mt-10 mx-4 flex items-center justify-center md:gap-48 gap-6">
           {info.map((content, i) => (

@@ -1,8 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import ml from "../assets/images/ml.jpg";
-import aws from "../assets/images/aws.jpg";
-import meta from "../assets/images/meta.jpg";
-
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
@@ -11,16 +8,7 @@ import { useState } from "react";
 import ImageModal from "./ImageModal";
 const Certificate = () => {
   const certificates = [
-    {
-      img: meta,
-      name: "Meta Back-End Developer Specialization",
-      link: "https://www.coursera.org/account/accomplishments/specialization/4AKWQ29RWJVY",
-    },
-    {
-      img: aws,
-      name: "AWS Cloud Technical Essentials",
-      link: "https://www.coursera.org/account/accomplishments/verify/K9KYX2KHQHN5",
-    },
+   
     {
       img: ml,
       name: "Machine Learning Specialization",

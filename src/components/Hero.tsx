@@ -1,5 +1,5 @@
 import hero from "../assets/images/hero.jpg";
-import { FaLinkedin,FaTwitter,FaGithub} from "react-icons/fa";
+import { FaLinkedin,FaGithub} from "react-icons/fa";
 import {MdEmail} from "react-icons/md"  
 import {IoLogoWhatsapp} from "react-icons/io"  
     
@@ -7,11 +7,10 @@ const Hero = () =>{
 
     
     const social_media = [
-        {icon: <FaGithub/>,link:"https://github.com/ikram9820/"},
-        {icon: <FaLinkedin/>,link:"https://www.linkedin.com/in/ikram-khan-929658249/"},
-        {icon: <FaTwitter/>,link:"https://twitter.com/ikramkhan_se"},
+        {icon: <FaGithub/>,link:"https://github.com/ikramullahasakzai/"},
+        {icon: <FaLinkedin/>,link:"https://www.linkedin.com/in/ikramullahasakzai/"},
         {icon: <IoLogoWhatsapp/>, link:"https://wa.me/+923020185186"},
-        {icon: <MdEmail/>, link: "mailto:ikkhan.se@gmail.com"}
+        {icon: <MdEmail/>, link: "mailto:ikramullahasakzai@gmail.com"}
     ]
 
 
@@ -25,7 +24,7 @@ const Hero = () =>{
             <div className="felx-1 flex-col">
                 <h1 className="text-cyan-600 md:text-6xl text-5xl">Hello!</h1>
                 <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white fond-bold">My Name Is Ikram Khan</h1>
-                <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400">Software Engineer</h4>
+                <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400">Data Analyst</h4>
 
                 
                 <ul className="mt-8 text-3xl flex text-gray-600 gap-5">
