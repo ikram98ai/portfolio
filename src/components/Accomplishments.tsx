@@ -1,26 +1,33 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import ml from "../assets/images/ml.jpg";
+import ml_img from "../assets/images/ml.jpg";
+import ds_img from "../assets/images/ds_img.png";
+
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { useState } from "react";
 import ImageModal from "./ImageModal";
-const Certificate = () => {
-  const certificates = [
+const Accomplishments = () => {
+  const accomplishments = [
    
     {
-      img: ml,
+      img: ml_img,
       name: "Machine Learning Specialization",
       link: "https://www.coursera.org/verify/specialization/DJ3DNR43P5ZG",
+    },
+    {
+      img: ds_img,
+      name: "Data Lab",
+      link: "https://github.com/ikramullahasakzai/datalab.git",
     },
   ];
 
   const [imageUrl, setImageUrl] = useState("");
   return (
-    <section id="certificates">
+    <section id="accomplishments">
       <div className="flex justify-center mt-16 text-4xl font-semibold gap-2">
-        <h3 className="text-cyan-600">Certificates</h3>
+        <h3 className="text-cyan-600">Accomplishments</h3>
       </div>
       <br />
 
@@ -33,7 +40,7 @@ const Certificate = () => {
         modules={[Pagination, Autoplay]}
         className="flex max-w-3xl gap-6 mb-8 px-5 mx-auto items-center justify-center lg:w-2/3 w-full"
       >
-        {certificates?.map((certificate) => (
+        {accomplishments?.map((certificate) => (
           <SwiperSlide
             key={certificate.link}
             className="h-fit w-full p-4 bg-slate-700 rounded-xl"
@@ -65,4 +72,4 @@ const Certificate = () => {
   );
 };
 
-export default Certificate;
+export default Accomplishments;

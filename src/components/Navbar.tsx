@@ -11,8 +11,7 @@ const menuLinks:MenuLink[] = [
    { name:"HOME", link:"#home"},
    { name:"ABOUT", link:"#about"},
    { name:"SKILLS", link:"#skills"},
-   { name:"CERTIFICATES", link:"#certificates"},
-   { name:"PROJECTS", link:"#projects"},
+   { name:"ACCOMPLISHMENTS", link:"#accomplishments"},
 ]
 
 const Navbar = () => {
