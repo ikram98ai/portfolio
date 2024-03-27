@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import ml_img from "../assets/images/ml.jpg";
-import ds_img from "../assets/images/ds_img.png";
-
+import da_img from "../assets/images/da_img.jpg";
+import data_lab_img from "../assets/images/ds_img.png";
+import cs_bike_share from '../assets/images/cs_bike_share.png';
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
@@ -12,12 +12,17 @@ const Accomplishments = () => {
   const accomplishments = [
    
     {
-      img: ml_img,
-      name: "Machine Learning Specialization",
-      link: "https://www.coursera.org/verify/specialization/DJ3DNR43P5ZG",
+      img: da_img,
+      name: "Google Data Analytics Specialization",
+      link: "https://www.coursera.org/account/accomplishments/specialization/NCVK7ZBMMR9E",
     },
     {
-      img: ds_img,
+      img: cs_bike_share,
+      name: "Case Study: Bike-Share",
+      link: "https://docs.google.com/presentation/d/10XJFSffJlDVmQjNAPQAyTnOtQSbvLoaDqldelCS514g/edit?usp=sharing",
+    },
+    {
+      img: data_lab_img,
       name: "Data Lab",
       link: "https://github.com/ikramullahasakzai/datalab.git",
     },
