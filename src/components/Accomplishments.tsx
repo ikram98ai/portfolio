@@ -24,7 +24,7 @@ const Accomplishments = () => {
     {
       img: data_lab_img,
       name: "Web App: Data Lab",
-      link: "https://github.com/ikramullahasakzai/datalab.git",
+      link: "https://github.com/ikram98ai/datalab.git",
     },
   ];
 
