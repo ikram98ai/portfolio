@@ -17,8 +17,8 @@ const About = () => {
       <div className="flex flex-col items-center md:gap-6 gap-12 max-w-6xl mx-auto text-gray-300 mt-5">
         <p className="text-justify leading-7 w-11/12 mx-auto">
         Experienced Data Analyst with a focus on marketing analytics. Certified in Data Analytics by Google. Proficient
-in Python, SQL, spreadsheet manipulation, conducting insightful analysis, Tableau visualization, and Meta Ads Manager. Skilled in streamlining
-data retrieval and manipulation processes, creating visually compelling dashboards and reports, and optimizing
+in Python, SQL, spreadsheet manipulation, Tableau visualization, and Meta Ads Manager. Skilled in streamlining
+data retrieval and manipulation processes, conducting insightful analysis, creating visually compelling dashboards and reports, and optimizing
 advertising campaigns on Meta platforms. Strong communicator able to translate complex insights into actionable
 recommendations, fostering a data-driven culture for informed decision-making.
         </p>

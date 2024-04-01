@@ -14,7 +14,7 @@ const Skills = () => {
       icon: <SiPandas />,
       name: "Pandas",
       skill: "Data Analysis",
-      level: "Intermediate",
+      level: "Expert",
     },
     {
       icon: <TbSql />,
