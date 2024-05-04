@@ -27,7 +27,7 @@ const Hero = () =>{
                 <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400">Data Analyst</h4>
 
                 
-                <ul className="mt-8 text-3xl flex text-gray-600 gap-5">
+                <ul className="mt-8 pb-16 text-3xl flex text-gray-600 gap-5">
                     {social_media.map((icon,i:number)=>(
                         <li key={i} className="hover:text-white cursor-pointer">
                             <a href={icon.link}>{icon.icon}</a>

@@ -2,6 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import da_img from "../assets/images/da_img.jpg";
 import data_lab_img from "../assets/images/ds_img.png";
 import cs_bike_share from '../assets/images/cs_bike_share.png';
+import nyc_tlc_fare_pred from '../assets/images/nyc-tlc-fare-pred.png';
+import nyc_tlc_customer_generocity from '../assets/images/nyc-tlc-custgen-pred.png';
+import ml_specialization from '../assets/images/Machine Learning Specialization.jpg';
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
@@ -12,6 +15,16 @@ const Accomplishments = () => {
   const accomplishments = [
    
     {
+      img: nyc_tlc_customer_generocity,
+      name: "New York City TLC Generous customer prediction with tree ensembling",
+      link: "https://github.com/ikram98ai/NYC-TLC-advance-analysis/blob/main/New%20York%20City%20TLC%20Generous%20customer%20prediction%20with%20tree%20ensembling.ipynb",
+    },
+    {
+      img: nyc_tlc_fare_pred,
+      name: "New York City TLC fare amount prediction with linear regression",
+      link: "https://github.com/ikram98ai/NYC-TLC-advance-analysis/blob/main/New%20York%20City%20TLC%20fare%20amount%20prediction%20with%20linear%20regression.ipynb",
+    },
+    {
       img: da_img,
       name: "Google Data Analytics Specialization",
       link: "https://www.coursera.org/account/accomplishments/specialization/NCVK7ZBMMR9E",
@@ -20,6 +33,11 @@ const Accomplishments = () => {
       img: cs_bike_share,
       name: "Case Study: Bike-Share",
       link: "https://docs.google.com/presentation/d/10XJFSffJlDVmQjNAPQAyTnOtQSbvLoaDqldelCS514g/edit?usp=sharing",
+    },
+    {
+      img: ml_specialization,
+      name: "Machine Learning Specialization",
+      link: "https://coursera.org/verify/specialization/DJ3DNR43P5ZG",
     },
     {
       img: data_lab_img,
