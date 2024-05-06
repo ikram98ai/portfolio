@@ -5,7 +5,7 @@ const About = () => {
   }
   const info: Info[] = [
     { text: "Projects completed", count: "5" },
-    { text: "Porfessional certificates", count: "2" },
+    { text: "Porfessional certificates", count: "3" },
   ];
 
   return (
@@ -16,11 +16,13 @@ const About = () => {
       </div>
       <div className="flex flex-col items-center md:gap-6 gap-12 max-w-6xl mx-auto text-gray-300 mt-5">
         <p className="text-justify leading-7 w-11/12 mx-auto">
-        Experienced advanced data analyst certified by Google, with recent completion of an advanced data analytics certificate focusing on statistical analysis,
-        regression, and machine learning models. Proficient in Python, SQL, spreadsheet manipulation, Tableau visualization, and Meta Ads Manager. Skilled in 
-        streamlining data retrieval and manipulation processes, conducting insightful analysis, creating visually compelling dashboards and reports, and optimizing 
-        advertising campaigns on Meta platforms. Strong communicator adept at translating complex insights into actionable recommendations, fostering a data-driven 
-        culture for informed decision-making.
+        Advance Data Analyst with experience in exploratory data analysis, data visualization, hypothesis testing, 
+        logistic regression, and machine learning models like K-mean, Naive Bayes and decision trees. Excellent 
+        understanding and proficiency of platforms for effective data analysis, cleaning, and visualization, 
+        including spreadsheets, SQL, Python, and Tableau. Strong communication, organizational, and analytical 
+        skills. Recently completed the Google Advanced Data Analytics Certificate—a rigorous, hands-on program 
+        that covers the entire scope of the data analysis and data modeling process.
+
 
 
 

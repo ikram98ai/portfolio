@@ -5,6 +5,8 @@ import cs_bike_share from '../assets/images/cs_bike_share.png';
 import nyc_tlc_fare_pred from '../assets/images/nyc-tlc-fare-pred.png';
 import nyc_tlc_customer_generocity from '../assets/images/nyc-tlc-custgen-pred.png';
 import ml_specialization from '../assets/images/Machine Learning Specialization.jpg';
+import adv_data_cert from '../assets/images/Google Advanced Data Analytics.jpg';
+import emp_retention_pred from '../assets/images/'
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
