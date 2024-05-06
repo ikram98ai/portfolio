@@ -22,11 +22,6 @@ const About = () => {
         including spreadsheets, SQL, Python, and Tableau. Strong communication, organizational, and analytical 
         skills. Recently completed the Google Advanced Data Analytics Certificate—a rigorous, hands-on program 
         that covers the entire scope of the data analysis and data modeling process.
-
-
-
-
-
         </p>
         <ul className="mt-10 mx-4 flex items-center justify-center md:gap-48 gap-6">
           {info.map((content, i) => (

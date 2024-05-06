@@ -6,7 +6,7 @@ import nyc_tlc_fare_pred from '../assets/images/nyc-tlc-fare-pred.png';
 import nyc_tlc_customer_generocity from '../assets/images/nyc-tlc-custgen-pred.png';
 import ml_specialization from '../assets/images/Machine Learning Specialization.jpg';
 import adv_data_cert from '../assets/images/Google Advanced Data Analytics.jpg';
-import emp_retention_pred from '../assets/images/'
+import emp_retention_pred from '../assets/images/Employee Retention Prediction executive summary.png';
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
@@ -16,6 +16,16 @@ import ImageModal from "./ImageModal";
 const Accomplishments = () => {
   const accomplishments = [
    
+    {
+      img: adv_data_cert,
+      name: "Google Advanced Data Analytics Specialization",
+      link: "https://www.credly.com/badges/d3a2e2db-a562-4f86-9cc1-97367998a9fd/linked_in_profile",
+    },
+    {
+      img: emp_retention_pred,
+      name: "Employee Retention Prediction executive summary",
+      link: "https://github.com/ikram98ai/EmployeeRetentionPrediction/blob/main/Employee%20Retention%20Prediction.ipynb",
+    },
     {
       img: nyc_tlc_customer_generocity,
       name: "New York City TLC Generous customer prediction with tree ensembling",
@@ -29,7 +39,7 @@ const Accomplishments = () => {
     {
       img: da_img,
       name: "Google Data Analytics Specialization",
-      link: "https://www.coursera.org/account/accomplishments/specialization/NCVK7ZBMMR9E",
+      link: "https://www.credly.com/badges/c03b95a8-a96f-4b3c-99ae-4b0dd69bf120/linked_in_profile",
     },
     {
       img: cs_bike_share,
