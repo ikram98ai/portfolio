@@ -16,11 +16,7 @@ import ImageModal from "./ImageModal";
 const Accomplishments = () => {
   const accomplishments = [
    
-    {
-      img: adv_data_cert,
-      name: "Google Advanced Data Analytics Specialization",
-      link: "https://www.credly.com/badges/d3a2e2db-a562-4f86-9cc1-97367998a9fd/linked_in_profile",
-    },
+  
     {
       img: emp_retention_pred,
       name: "Employee Retention Prediction executive summary",
@@ -37,6 +33,16 @@ const Accomplishments = () => {
       link: "https://github.com/ikram98ai/NYC-TLC-advance-analysis/blob/main/New%20York%20City%20TLC%20fare%20amount%20prediction%20with%20linear%20regression.ipynb",
     },
     {
+      img: adv_data_cert,
+      name: "Google Advanced Data Analytics Specialization",
+      link: "https://www.credly.com/badges/d3a2e2db-a562-4f86-9cc1-97367998a9fd/linked_in_profile",
+    },
+    {
+      img: ml_specialization,
+      name: "Machine Learning Specialization",
+      link: "https://coursera.org/verify/specialization/DJ3DNR43P5ZG",
+    },
+    {
       img: da_img,
       name: "Google Data Analytics Specialization",
       link: "https://www.credly.com/badges/c03b95a8-a96f-4b3c-99ae-4b0dd69bf120/linked_in_profile",
@@ -46,11 +52,7 @@ const Accomplishments = () => {
       name: "Case Study: Bike-Share",
       link: "https://docs.google.com/presentation/d/10XJFSffJlDVmQjNAPQAyTnOtQSbvLoaDqldelCS514g/edit?usp=sharing",
     },
-    {
-      img: ml_specialization,
-      name: "Machine Learning Specialization",
-      link: "https://coursera.org/verify/specialization/DJ3DNR43P5ZG",
-    },
+    
     {
       img: data_lab_img,
       name: "Web App: Data Lab",
@@ -73,22 +75,23 @@ const Accomplishments = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         modules={[Pagination, Autoplay]}
-        className="flex max-w-3xl gap-6 mb-8 px-5 mx-auto items-center justify-center lg:w-2/3 w-full"
+        className="flex  gap-6 mb-8 px-5 mx-auto items-center justify-center lg:w-2/3 w-full"
       >
         {accomplishments?.map((certificate) => (
           <SwiperSlide
             key={certificate.link}
             className="h-fit w-full p-4 bg-slate-700 rounded-xl"
           >
-            <div className="w-62 h-52">
+            <div className=" ">
               <img
                 onClick={() => setImageUrl(certificate.img)}
                 src={certificate.img}
-                alt=""
+                alt={certificate.name}
                 className="rounded-lg w-full h-full object-cover "
+                
               />
             </div>
-            <h3 className="text-md font-medium truncate my-4">{certificate.name}</h3>
+            <h3 className="text-md font-small my-4">{certificate.name}</h3>
             <div className="flex md:flex-row  flex-col items-center justify-center gap-3">
               <a
                 href={certificate.link}
