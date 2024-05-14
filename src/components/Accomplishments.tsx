@@ -99,7 +99,7 @@ const Accomplishments = () => {
                 rel="noreferrer"
                 className="text-cyan-600 font bg-gray-800 rounded-full px-2 mb-4 py-1 flex w-32 justify-center"
               >
-                Verify
+                Learn more
               </a>
             </div>
           </SwiperSlide>
