@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import da_img from "../assets/images/da_img.jpg";
-import data_lab_img from "../assets/images/ds_img.png";
+import data_lab_img from "../assets/images/Data lab proj.png";
 import cs_bike_share from '../assets/images/cs_bike_share.png';
 import nyc_tlc_fare_pred from '../assets/images/nyc-tlc-fare-pred.png';
 import nyc_tlc_customer_generocity from '../assets/images/nyc-tlc-custgen-pred.png';
@@ -33,6 +33,16 @@ const Accomplishments = () => {
       link: "https://github.com/ikram98ai/NYC-TLC-advance-analysis/blob/main/New%20York%20City%20TLC%20fare%20amount%20prediction%20with%20linear%20regression.ipynb",
     },
     {
+      img: data_lab_img,
+      name: "Web App: Data Lab",
+      link: "https://github.com/ikram98ai/datalab.git",
+    },
+    {
+      img: cs_bike_share,
+      name: "Case Study: Bike-Share",
+      link: "https://docs.google.com/presentation/d/10XJFSffJlDVmQjNAPQAyTnOtQSbvLoaDqldelCS514g/edit?usp=sharing",
+    },
+    {
       img: adv_data_cert,
       name: "Google Advanced Data Analytics Specialization",
       link: "https://www.credly.com/badges/d3a2e2db-a562-4f86-9cc1-97367998a9fd/linked_in_profile",
@@ -47,16 +57,8 @@ const Accomplishments = () => {
       name: "Google Data Analytics Specialization",
       link: "https://www.credly.com/badges/c03b95a8-a96f-4b3c-99ae-4b0dd69bf120/linked_in_profile",
     },
-    {
-      img: cs_bike_share,
-      name: "Case Study: Bike-Share",
-      link: "https://docs.google.com/presentation/d/10XJFSffJlDVmQjNAPQAyTnOtQSbvLoaDqldelCS514g/edit?usp=sharing",
-    },
-    {
-      img: data_lab_img,
-      name: "Web App: Data Lab",
-      link: "https://github.com/ikram98ai/datalab.git",
-    },
+   
+ 
   ];
 
   const [imageUrl, setImageUrl] = useState("");
