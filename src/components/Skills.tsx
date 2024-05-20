@@ -17,10 +17,16 @@ const Skills = () => {
       level: "Expert",
     },
     {
+      icon: <SiScikitlearn />,
+      name: "Scikitlearn",
+      skill: "Machine Learning",
+      level: "Expert",
+    },
+    {
       icon: <TbSql />,
       name: "SQL",
       skill: "Data Analysis",
-      level: "Expert",
+      level: "Intermediate",
     },
     {
       icon: <FaDatabase />,
@@ -32,20 +38,15 @@ const Skills = () => {
       icon: <SiGooglesheets />,
       name: "Spreadsheets",
       skill: "Data Analysis",
-      level: "Intermediate",
+      level: "Beginner",
     },
     {
       icon: <SiTableau />,
       name: "Tableau",
       skill: "Data Visualization",
-      level: "Intermediate",
-    },
-    {
-      icon: <SiScikitlearn />,
-      name: "Scikitlearn",
-      skill: "Machine Learning",
       level: "Beginner",
     },
+   
   ];
   return (
     <section

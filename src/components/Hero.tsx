@@ -2,11 +2,13 @@ import hero from "../assets/images/hero.jpg";
 import { FaLinkedin,FaGithub} from "react-icons/fa";
 import {MdEmail} from "react-icons/md"  
 import {IoLogoWhatsapp} from "react-icons/io"  
-    
+import { SiUpwork } from "react-icons/si";
+
 const Hero = () =>{
 
     
     const social_media = [
+        {icon: <SiUpwork />, link:'https://www.upwork.com/freelancers/~0188737e3035c24d26'    },
         {icon: <FaGithub/>,link:"https://github.com/ikram98ai?tab=repositories"},
         {icon: <FaLinkedin/>,link:"https://www.linkedin.com/in/ikram98ai/"},
         {icon: <IoLogoWhatsapp/>, link:"https://wa.me/+923020185186"},
@@ -24,7 +26,7 @@ const Hero = () =>{
             <div className="felx-1 flex-col">
                 <h1 className="text-cyan-600 md:text-6xl text-5xl">Hello!</h1>
                 <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white fond-bold">My Name Is Ikram Khan</h1>
-                <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400">Data Analyst</h4>
+                <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-400">Data Scientist</h4>
 
                 
                 <ul className="mt-8 pb-16 text-3xl flex text-gray-600 gap-5">
