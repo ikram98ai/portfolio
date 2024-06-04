@@ -60,7 +60,7 @@ const Certificates = () => {
                 
               />
             </div>
-            <h3 className="text-md font-small my-4">{certificate.name}</h3>
+            <h3 className="font-small my-4 font-semibold truncate">{certificate.name}</h3>
             <div className="flex md:flex-row  flex-col items-center justify-center gap-3">
               <a
                 href={certificate.link}
