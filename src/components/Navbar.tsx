@@ -11,7 +11,11 @@ const menuLinks:MenuLink[] = [
    { name:"HOME", link:"#home"},
    { name:"ABOUT", link:"#about"},
    { name:"SKILLS", link:"#skills"},
-   { name:"ACCOMPLISHMENTS", link:"#accomplishments"},
+   { name:"Projects", link:"#projects"},
+   { name:"Certificates", link:"#certificates"},
+   { name:"Resume", link:"https://docs.google.com/document/d/11t17PEAS97lNW2kPyLYI4koR2Vk-gDFrVuJ7qDnizwg/edit?usp=sharing&resourcekey=0-PmGhJH61BjsOI_1duwLFFg"},
+
+
 ]
 
 const Navbar = () => {

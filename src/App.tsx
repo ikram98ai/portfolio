@@ -1,8 +1,9 @@
 import About from "./components/About"
-import Accomplishments from "./components/Accomplishments"
+import Projects from "./components/Projects"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Skills from "./components/Skills"
+import Certificates from './components/Certificates'
 
 function App() {
 
@@ -13,7 +14,9 @@ function App() {
       <Hero/>
       <About/>
       <Skills/>
-      <Accomplishments/>
+      <Projects/>
+      <Certificates/>
+
     </>
   )
 }

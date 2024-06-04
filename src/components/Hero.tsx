@@ -2,13 +2,13 @@ import hero from "../assets/images/hero.jpg";
 import { FaLinkedin,FaGithub} from "react-icons/fa";
 import {MdEmail} from "react-icons/md"  
 import {IoLogoWhatsapp} from "react-icons/io"  
-import { SiUpwork } from "react-icons/si";
+import { FaSquareUpwork } from "react-icons/fa6";
 
 const Hero = () =>{
 
     
     const social_media = [
-        {icon: <SiUpwork />, link:'https://www.upwork.com/freelancers/~0188737e3035c24d26'    },
+        {icon: <FaSquareUpwork />, link:'https://www.upwork.com/services/product/development-it-eda-statistical-analysis-and-predictive-ml-models-1791409816667506283?ref=project_share'    },
         {icon: <FaGithub/>,link:"https://github.com/ikram98ai?tab=repositories"},
         {icon: <FaLinkedin/>,link:"https://www.linkedin.com/in/ikram98ai/"},
         {icon: <IoLogoWhatsapp/>, link:"https://wa.me/+923020185186"},
