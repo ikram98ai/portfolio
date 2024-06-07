@@ -1,6 +1,6 @@
 import { FaPython, FaDatabase } from "react-icons/fa";
 import { TbSql } from "react-icons/tb";
-import { SiScikitlearn,SiGooglesheets, SiPandas, SiTableau } from "react-icons/si";
+import { SiScikitlearn,SiGooglesheets,SiPytorch, SiPandas, SiTableau } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
@@ -20,6 +20,12 @@ const Skills = () => {
       icon: <SiScikitlearn />,
       name: "Scikitlearn",
       skill: "Machine Learning",
+      level: "Expert",
+    },
+    {
+      icon: <SiPytorch />,
+      name: "Pytorch/Fast.ai",
+      skill: "Deep Learning",
       level: "Expert",
     },
     {

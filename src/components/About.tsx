@@ -16,7 +16,7 @@ const About = () => {
       </div>
       <div className="flex flex-col items-center md:gap-6 gap-12 max-w-6xl mx-auto text-gray-300 mt-5">
         <p className="text-justify leading-7 w-11/12 mx-auto">
-        Data Scientist with experience in Exploratory Data Analysis, Data Visualization, Hypothesis Testing, Regression Analysis, and Machine Learning models like K-means, Naive Bayes, Random Forest, and XGBoost. Excellent understanding and proficiency of platforms for effective data analysis, cleaning, and visualization, including Python, SQL, and Tableau. Strong communication, organizational, and analytical skills. Recently completed the Google Advanced Data Analytics Certificate—a rigorous, hands-on program that covers the entire scope of the data analysis and data modeling process.
+        Data Scientist with experience in Exploratory Data Analysis, Data Visualization, Hypothesis Testing, Regression Analysis, and Machine Learning and Deep Learning models. Excellent understanding and proficiency of platforms for effective data analysis, cleaning, and visualization, including Python, SQL, and Tableau. Strong communication, organizational, and analytical skills. Recently completed the Google Advanced Data Analytics Certificate—a rigorous, hands-on program that covers the entire scope of the data analysis and data modeling process.
         </p>
         <ul className="mt-10 mx-4 flex items-center justify-center md:gap-48 gap-6">
           {info.map((content, i) => (
