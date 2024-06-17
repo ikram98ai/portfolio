@@ -24,7 +24,7 @@ const Skills = () => {
     },
     {
       icon: <SiPytorch />,
-      name: "Pytorch/Fast.ai",
+      name: "Pytorch",
       skill: "Deep Learning",
       level: "Expert",
     },
