@@ -2,13 +2,13 @@ import hero from "../assets/images/hero.jpg";
 import { FaLinkedin,FaGithub} from "react-icons/fa";
 import {MdEmail} from "react-icons/md"  
 import {IoLogoWhatsapp} from "react-icons/io"  
-import { SiKaggle } from "react-icons/si";
+import { FaKaggle } from "react-icons/fa";
 
 const Hero = () =>{
 
     
     const social_media = [
-        {icon: <SiKaggle />, link:'https://www.kaggle.com/ikram98ai'    },
+        {icon: <FaKaggle />, link:'https://www.kaggle.com/ikram98ai'    },
         {icon: <FaGithub/>,link:"https://github.com/ikram98ai?tab=repositories"},
         {icon: <FaLinkedin/>,link:"https://www.linkedin.com/in/ikram98ai/"},
         {icon: <IoLogoWhatsapp/>, link:"https://wa.me/+923020185186"},
