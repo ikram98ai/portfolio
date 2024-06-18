@@ -17,17 +17,17 @@ const Projects = () => {
     {
       img: emp_retention_pred,
       name: "Employee Retention Prediction executive summary",
-      link: "https://github.com/ikram98ai/EmployeeRetentionPrediction/blob/main/Employee%20Retention%20Prediction.ipynb",
+      link: "https://github.com/ikram98ai/case-studies/tree/master/EmployeeRetention",
     },
     {
       img: nyc_tlc_customer_generocity,
       name: "New York City TLC Generous Customer Prediction",
-      link: "https://github.com/ikram98ai/NYC-TLC-advance-analysis/blob/main/New%20York%20City%20TLC%20Generous%20customer%20prediction%20with%20tree%20ensembling.ipynb",
+      link: "https://github.com/ikram98ai/case-studies/tree/master/NYC-TLC",
     },
     {
       img: nyc_tlc_fare_pred,
       name: "New York City TLC Fare Amount Prediction",
-      link: "https://github.com/ikram98ai/NYC-TLC-advance-analysis/blob/main/New%20York%20City%20TLC%20fare%20amount%20prediction%20with%20linear%20regression.ipynb",
+      link: "https://github.com/ikram98ai/case-studies/tree/master/NYC-TLC",
     },
     {
       img: data_lab_img,
@@ -37,7 +37,7 @@ const Projects = () => {
     {
       img: cs_bike_share,
       name: "Case Study: Bike-Share",
-      link: "https://docs.google.com/presentation/d/10XJFSffJlDVmQjNAPQAyTnOtQSbvLoaDqldelCS514g/edit?usp=sharing",
+      link: "https://github.com/ikram98ai/case-studies/tree/master/BikeShare",
     },
    
  
