@@ -1,13 +1,6 @@
 const About = () => {
-  interface Info {
-    text: string;
-    count: string;
-  }
-  const info: Info[] = [
-    { text: "Projects completed", count: "5" },
-    { text: "Porfessional certificates", count: "3" },
-  ];
-
+ 
+  
   return (
     <section id="about" className="pb-10 text-white">
       <div className="text-4xl font-semibold  flex justify-center gap-2">
@@ -16,23 +9,8 @@ const About = () => {
       </div>
       <div className="flex flex-col items-center md:gap-6 gap-12 max-w-6xl mx-auto text-gray-300 mt-5">
         <p className="text-justify leading-7 w-11/12 mx-auto">
-        Data Scientist with experience in Exploratory Data Analysis, Data Visualization, Hypothesis Testing, Regression Analysis, and Machine Learning and Deep Learning models. Excellent understanding and proficiency of platforms for effective data analysis, cleaning, and visualization, including Python, SQL, and Tableau. Strong communication, organizational, and analytical skills. Recently completed the Google Advanced Data Analytics Certificate—a rigorous, hands-on program that covers the entire scope of the data analysis and data modeling process.
-        </p>
+        I am an expert Data Scientist with extensive experience in exploratory data analysis, data visualization, statistical analysis, regression analysis, and training machine learning and deep learning models. Highly skilled in using tools like Excel, SQL, Tableau, Python, and PyTorch for effective data analysis, cleaning, and visualization, and training predictive models. Possess strong analytical abilities, attention to detail, and clear communication of complex data insights. Excellent organizational skills and proven success in managing and delivering projects efficiently.        </p>
         <ul className="mt-10 mx-4 flex items-center justify-center md:gap-48 gap-6">
-          {info.map((content, i) => (
-            <li key={i}>
-              <div className="flex-col">
-                <div className="flex">
-                  <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                    {" "}
-                    {content.count}{" "}
-                  </h3>
-                  <h3 className="text-cyan-600 font-bold text-2xl">+</h3>
-                </div>
-                <h3 className="md:text-base text-xs">{content.text}</h3>
-              </div>
-            </li>
-          ))}
         </ul>
       </div>
     </section>

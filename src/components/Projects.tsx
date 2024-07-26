@@ -1,8 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import data_lab_img from "../assets/images/Data lab proj.png";
-import cs_bike_share from '../assets/images/cs_bike_share.png';
-import nyc_tlc_fare_pred from '../assets/images/nyc-tlc-fare-pred.png';
-import nyc_tlc_customer_generocity from '../assets/images/nyc-tlc-custgen-pred.png';
+import bike_share from '../assets/images/cs_bike_share.png';
+import fare_pred from '../assets/images/nyc-tlc-fare-pred.png';
+import customer_generousity from '../assets/images/nyc-tlc-custgen-pred.png';
+import cust_churn from '../assets/images/User Churn Analysis Project.png';
+import video_claim from '../assets/images/TikTok video claim model report.png'
 import emp_retention_pred from '../assets/images/Employee Retention Prediction executive summary.png';
 import "swiper/css";
 import { Pagination, Autoplay } from "swiper/modules";
@@ -12,32 +14,41 @@ import { useState } from "react";
 import ImageModal from "./ImageModal";
 const Projects = () => {
   const projects = [
-   
+    {
+      img: video_claim,
+      name: "TikTok video claim model's report",
+      link: "https://www.kaggle.com/code/ikram98ai/taxi-fare-amount-and-generous-customer-prediction",
+    },
   
+    {
+      img: cust_churn,
+      name: "User Churn Analysis Project executive summary",
+      link: "https://www.kaggle.com/code/ikram98ai/user-churn-prediction",
+    },
     {
       img: emp_retention_pred,
       name: "Employee Retention Prediction executive summary",
-      link: "https://github.com/ikram98ai/case-studies/tree/master/EmployeeRetention",
+      link: "https://www.kaggle.com/code/ikram98ai/google-capstone-employee-retention-prediction",
     },
     {
-      img: nyc_tlc_customer_generocity,
+      img: customer_generousity,
       name: "New York City TLC Generous Customer Prediction",
-      link: "https://github.com/ikram98ai/case-studies/tree/master/NYC-TLC",
+      link: "https://www.kaggle.com/code/ikram98ai/taxi-fare-amount-and-generous-customer-prediction",
     },
     {
-      img: nyc_tlc_fare_pred,
+      img: fare_pred,
       name: "New York City TLC Fare Amount Prediction",
-      link: "https://github.com/ikram98ai/case-studies/tree/master/NYC-TLC",
+      link: "https://www.kaggle.com/code/ikram98ai/taxi-fare-amount-and-generous-customer-prediction",
     },
     {
       img: data_lab_img,
       name: "Web App: Data Lab",
-      link: "https://github.com/ikram98ai/datalab.git",
+      link: "https://github.com/ikram98ai/datalab",
     },
     {
-      img: cs_bike_share,
+      img: bike_share,
       name: "Case Study: Bike-Share",
-      link: "https://github.com/ikram98ai/case-studies/tree/master/BikeShare",
+      link: "https://github.com/ikram98ai/BikeShare",
     },
    
  

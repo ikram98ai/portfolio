@@ -14,8 +14,8 @@ function App() {
       <Hero/>
       <About/>
       <Skills/>
-      <Projects/>
       <Certificates/>
+      <Projects/>
 
     </>
   )
