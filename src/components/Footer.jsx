@@ -1,7 +1,7 @@
 // src/components/Footer.js
 import React from 'react';
 import {contact} from '../data'
-
+import dp from '../assets/dp.png';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <div className="flex items-center">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 w-10 h-10 rounded-lg"></div>
+              <img className='h-10 w-10 rounded-full object-cover' src={dp} alt="" />
               <span className="ml-3 text-xl font-bold">Ikram Khan</span>
             </div>
             <p className="mt-4 text-gray-400 max-w-md">
