@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star, Code, Brain, Database, Cloud, ChevronRight, Mail, ExternalLink, Award, Users, DollarSign, TrendingUp, Clock, Shield, Target, Zap, CheckCircle, Play, ArrowRight } from 'lucide-react';
+import { Star, Code, Brain, Database, Cloud,  Mail,  Award, Users, DollarSign, TrendingUp, Clock, Shield, Target, Zap, CheckCircle, Play, ArrowRight } from 'lucide-react';
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState('about');
@@ -13,7 +13,12 @@ const Portfolio = () => {
     { name: 'Computer Vision Systems', icon: Code, level: 87 },
     { name: 'Strategic AI Consulting', icon: Target, level: 92 }
   ];
-
+  const contact =  {
+    email: "ikram98ai@gmail.com",
+    upwork: "https://www.upwork.com/freelancers/ikram98ai",
+    linkedin: "https://www.linkedin.com/in/ikram98ai/",
+    github: "https://github.com/ikram98ai",
+  }
   const impactMetrics = [
     { label: "Average ROI Delivered", value: "340%", color: "text-green-400", description: "Across all client projects" },
     { label: "Total Value Generated", value: "$8.5M+", color: "text-blue-400", description: "Measurable business impact" },
@@ -37,7 +42,7 @@ const Portfolio = () => {
       client: "Media Company",
       duration: "6 weeks",
       roi: "450%",
-      amount: "$600.00"
+      amount: "$6000.00"
     },
     {
       title: "Healthcare: Automated Wellness Monitoring Revolution",
@@ -54,7 +59,7 @@ const Portfolio = () => {
       client: "Healthcare Provider",
       duration: "8 weeks",
       roi: "280%",
-      amount: "$500.00"
+      amount: "$5000.00"
     },
     {
       title: "Retail: Inventory Optimization Revolution",
@@ -71,7 +76,7 @@ const Portfolio = () => {
       client: "Retail Chain",
       duration: "12 weeks",
       roi: "520%",
-      amount: "$420.00"
+      amount: "$4020.00"
     }
   ];
 
@@ -80,7 +85,7 @@ const Portfolio = () => {
       project: "Fine-Tune LLaMA 3-Vision Models",
       rating: 5.0,
       comment: "Ikram didn't just build a model—he transformed how we think about computer vision. The business impact was immediate with 340% ROI in the first quarter.",
-      amount: "$600.00",
+      amount: "$6000.00",
       duration: "May 3, 2025 - Jun 14, 2025",
       businessImpact: "340% ROI"
     },
@@ -88,7 +93,7 @@ const Portfolio = () => {
       project: "AWS Certified AI/ML Developer (Chatbot Specialist)",
       rating: 5.0,
       comment: "Most developers give you what you ask for. Ikram gives you what your business actually needs. The chatbot solution saves us $50K monthly in support costs.",
-      amount: "$500.00",
+      amount: "$5000.00",
       duration: "Dec 18, 2024 - Jan 1, 2025",
       businessImpact: "$600K annual savings"
     },
@@ -96,7 +101,7 @@ const Portfolio = () => {
       project: "Deploy ML Pipeline and serverless inference on AWS",
       rating: 5.0,
       comment: "Ikram doesn't just deliver code—he delivers business transformation. The pipeline reduced our processing costs by 67% while improving accuracy.",
-      amount: "$300.00",
+      amount: "$3000.00",
       duration: "Sep 19, 2024 - Sep 27, 2024",
       businessImpact: "67% cost reduction"
     },
@@ -104,7 +109,7 @@ const Portfolio = () => {
       project: "Python Script for Task Optimisation",
       rating: 5.0,
       comment: "What impressed me most was how Ikram connected technical optimization to business outcomes. The script eliminated 23 hours of manual work weekly.",
-      amount: "$200.00",
+      amount: "$2000.00",
       duration: "Nov 24, 2024 - Dec 5, 2024",
       businessImpact: "92 hours/month saved"
     }
@@ -192,13 +197,9 @@ const Portfolio = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <button className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center gap-2">
+              <button onClick={()=> setActiveTab("projects")} className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center gap-2">
                 View Case Studies
                 <ArrowRight className="w-5 h-5" />
-              </button>
-              <button className="border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all duration-300 flex items-center gap-2">
-                <Play className="w-5 h-5" />
-                Watch Client Interview
               </button>
             </div>
           </div>
@@ -468,13 +469,13 @@ const Portfolio = () => {
             No sales pitch—just insights for your specific situation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center gap-2 text-lg">
+          <a href={contact.email} target="_blank" rel="noopener noreferrer" className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 flex items-center gap-2 text-lg">
               <Mail className="w-5 h-5" />
               Schedule Strategic Call
-            </button>
-            <button className="border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all duration-300">
+            </a>
+            <a href={contact.upwork} target="_blank" rel="noopener noreferrer"  className="border border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all duration-300">
               View Full Upwork Profile
-            </button>
+            </a>
           </div>
           <p className="text-slate-400 text-sm mt-4">
             Average client sees 340% ROI within 90 days

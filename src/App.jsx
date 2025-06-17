@@ -7,10 +7,10 @@ const portfolioData = {
   title: "AI & Machine Learning Engineer",
   tagline: "I build intelligent, scalable AI solutions that transform data into business value. Specializing in MLOps, custom AI Agents, and end-to-end AWS pipelines.",
   contact: {
-    email: "ikram.khan@example.com",
-    upwork: "https://www.upwork.com/freelancers/~01...", // Replace with your actual profile link
-    linkedin: "https://www.linkedin.com/in/ikram-khan-ai/", // Replace with your actual profile link
-    github: "https://github.com/ikram-khan", // Replace with your actual profile link
+    email: "ikram98ai@gmail.com",
+    upwork: "https://www.upwork.com/freelancers/ikram98ai", 
+    linkedin: "https://www.linkedin.com/in/ikram98ai/", 
+    github: "https://github.com/ikram98ai", 
   },
   services: [
     {
@@ -77,12 +77,12 @@ const portfolioData = {
     }
   ],
   workHistory: [
-    { title: "Fine-Tune LLaMA 3-Vision Models", rating: 5.0, date: "Jun 14, 2025", price: "$600.00" },
-    { title: "Hugging Face Auto Train Expert", rating: 5.0, date: "Apr 22, 2025", price: "$500.00" },
-    { title: "Symbol Detection Application", rating: null, date: "Jan 28, 2025", price: "$400.00" },
-    { title: "AWS Certified AI/ML Developer", rating: 5.0, date: "Jan 1, 2025", price: "$500.00" },
-    { title: "Python Script for Task Optimisation", rating: 5.0, date: "Dec 5, 2024", price: "$200.00" },
-    { title: "Deploy ML Pipeline and serverless inference", rating: 5.0, date: "Sep 27, 2024", price: "$300.00" },
+    { title: "Fine-Tune LLaMA 3-Vision Models", rating: 5.0, date: "Jun 14, 2025", price: "$6000.00" },
+    { title: "Hugging Face Auto Train Expert", rating: 5.0, date: "Apr 22, 2025", price: "$5000.00" },
+    { title: "Symbol Detection Application", rating: null, date: "Jan 28, 2025", price: "$4000.00" },
+    { title: "AWS Certified AI/ML Developer", rating: 5.0, date: "Jan 1, 2025", price: "$5000.00" },
+    { title: "Python Script for Task Optimisation", rating: 5.0, date: "Dec 5, 2024", price: "$2000.00" },
+    { title: "Deploy ML Pipeline and serverless inference", rating: 5.0, date: "Sep 27, 2024", price: "$3000.00" },
   ]
 };
 
