@@ -460,7 +460,7 @@ const Portfolio = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 mb-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20 pb-16">
         <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-lg rounded-2xl p-12 text-center border border-white/20">
           <h2 className="text-4xl font-bold text-white mb-4">Ready to 10x Your Business with AI?</h2>
           <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
