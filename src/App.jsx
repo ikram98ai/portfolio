@@ -160,7 +160,7 @@ const App = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-32 pb-16 md:pb-24">
           <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="text-center md:text-left order-2 md:order-1">
-              <div className="flex flex-col sm:flex-row items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-2 mb-6 w-full sm:w-auto">
+              <div className="flex flex-col justify-between sm:flex-row items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-2 mb-6 w-full sm:w-auto">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse"></div>
                   <span className="text-emerald-300 font-medium text-sm">
