@@ -670,7 +670,7 @@ const App = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
             <a
-              href={`mailto:${contact.email}`}
+              href={`mailto:${contact.email}?subject=Contact%20via%20Portfolio%20–%20AI%20Engineering%20Services%20Inquiry`}
               className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-2 text-sm md:text-base w-full sm:w-auto"
             >
               <Mail className="w-4 h-4 md:w-5 md:h-5" />

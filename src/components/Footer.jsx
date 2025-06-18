@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-6 md:mb-0">
             <div className="flex items-center">
               <img className='h-10 w-10 rounded-full object-cover' src={dp} alt="" />
@@ -18,22 +18,18 @@ const Footer = () => {
               AI/ML Engineer specializing in transforming data into innovative solutions that drive business success.
             </p>
           </div>
-          
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-   
-            
-            <div>
-              <h4 className="font-bold text-lg mb-4">Services</h4>
-              <ul className="space-y-2">
-                <li><a href="#llm" className="text-gray-400 hover:text-white transition-colors">LLM Fine-Tuning</a></li>
-                <li><a href="#aws" className="text-gray-400 hover:text-white transition-colors">AWS ML Solutions</a></li>
-                <li><a href="#de" className="text-gray-400 hover:text-white transition-colors">Data Engineering</a></li>
-                <li><a href="#ai" className="text-gray-400 hover:text-white transition-colors">AI Agent Development</a></li>
-                <li><a href="#cv" className="text-gray-400 hover:text-white transition-colors">Computer Vision</a></li>
-                <li><a href="#iac" className="text-gray-400 hover:text-white transition-colors">Infrastructure as Code</a></li>
+                      
+          <div>
+            <h4 className="font-bold text-lg mb-4">Services</h4>
+            <ul className="space-y-2">
+              <li><a href="#llm" className="text-gray-400 hover:text-white transition-colors">LLM Fine-Tuning</a></li>
+              <li><a href="#aws" className="text-gray-400 hover:text-white transition-colors">AWS ML Solutions</a></li>
+              <li><a href="#de" className="text-gray-400 hover:text-white transition-colors">Data Engineering</a></li>
+              <li><a href="#ai" className="text-gray-400 hover:text-white transition-colors">AI Agent Development</a></li>
+              <li><a href="#cv" className="text-gray-400 hover:text-white transition-colors">Computer Vision</a></li>
+              <li><a href="#iac" className="text-gray-400 hover:text-white transition-colors">Infrastructure as Code</a></li>
 
-              </ul>
-            </div>
+            </ul>
           </div>
         </div>
         

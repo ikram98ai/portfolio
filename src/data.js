@@ -128,16 +128,26 @@ export const reviews = [
       project: "Fine-Tune LLaMA 3-Vision Models",
       rating: 5.0,
       comment:
-        "Ikram didn't just build a model—he transformed how we think about computer vision. The business impact was immediate with 340% ROI in the first quarter.",
+        "Ikram was absolutely incredible to work with. Not only is he a FANTASTIC developer who really knows what he is doing and writes great code, he was extremely communicative, and also went above and beyond to get my company's needs for this project fulfilled. I will ABSOLUTELY hire again!!! Thank you, Ikram!",
     //   amount: "$6000.00",
       duration: "May 3, 2025 - Jun 14, 2025",
       businessImpact: "340% ROI",
+    },
+    
+    {
+      project: "Hugging Face Auto Train Expert",
+      rating: 5.0,
+      comment:
+        "great work from Ikram on finetuning vision language model",
+    //   amount: "$6000.00",
+      duration: "Apr 14, 2025 - Apr 22, 2025",
+      businessImpact: "Reduced time by 60%",
     },
     {
       project: "AWS Certified AI/ML Developer (Chatbot Specialist)",
       rating: 5.0,
       comment:
-        "Most developers give you what you ask for. Ikram gives you what your business actually needs. The chatbot solution saves us $50K monthly in support costs.",
+        "I worked with Ikram Khan on developing a chatbot, and the results exceeded expectations. His expertise as an AI Engineer was evident throughout the project, as he skillfully designed, implemented the chatbot to deliver accurate and user-friendly interactions. His problem-solving abilities and clear communication made the collaboration seamless. I highly recommend Ikram for any AI or chatbot-related projects.",
     //   amount: "$5000.00",
       duration: "Dec 18, 2024 - Jan 1, 2025",
       businessImpact: "$600K annual savings",
@@ -146,7 +156,7 @@ export const reviews = [
       project: "Deploy ML Pipeline and serverless inference on AWS",
       rating: 5.0,
       comment:
-        "Ikram doesn't just deliver code—he delivers business transformation. The pipeline reduced our processing costs by 67% while improving accuracy.",
+        "Ikram is really on time and do a great work to both explain the methology he is using and deliver timely. I'll absolute use him again if I've the chance.",
     //   amount: "$3000.00",
       duration: "Sep 19, 2024 - Sep 27, 2024",
       businessImpact: "67% cost reduction",
@@ -155,7 +165,7 @@ export const reviews = [
       project: "Python Script for Task Optimisation",
       rating: 5.0,
       comment:
-        "What impressed me most was how Ikram connected technical optimization to business outcomes. The script eliminated 23 hours of manual work weekly.",
+        "Great job creating the python script I required. Great speed, communication and knowledge.",
     //   amount: "$2000.00",
       duration: "Nov 24, 2024 - Dec 5, 2024",
       businessImpact: "92 hours/month saved",
