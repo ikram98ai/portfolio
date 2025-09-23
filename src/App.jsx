@@ -5,12 +5,14 @@ import {Star,  Code,  Mail,  TrendingUp,  Clock,  Shield,  CheckCircle,  ArrowRi
 import { reviews, skills, impactMetrics, caseStudies, methodology, differentiators, stats, contact } from "./data";
 
 export const services = [
-  {
-    title: "LLM Fine-Tuning & Optimization",
-    section:"llm",
+{
+    title: "FastAPI & React Fullstack AI Apps",
+    section: "fullstack",
     description:
-      "SFT, LoRA, QLoRA, PPO, DPO, GRPO, vLLM for efficient training and high-performance inference.",
-    keywords: ["Hugging Face", "Transfomer", "TRL", "Unsloth", "vLLM", "Kubeflow"],
+      "Design and build scalable, AI-powered web applications using FastAPI for backend APIs and React for modern, interactive frontends.",
+    keywords: [
+      "FastAPI", "React", "Serverless", "OpenAI API", "Gemini", "AWS Lambda", "CI/CD"
+    ],
     icon: (
       <svg
         className="w-6 h-6 md:w-8 md:h-8 text-blue-500"
@@ -22,7 +24,7 @@ export const services = [
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="2"
-          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+          d="M4 4h16v16H4V4zm4 4h8v8H8V8z"
         />
       </svg>
     ),
@@ -261,6 +263,7 @@ const App = () => {
           </div>
         </div>
       </div>
+      
 
       {/* Impact Metrics - Mobile Optimized */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 md:-mt-12">
@@ -288,7 +291,32 @@ const App = () => {
           ))}
         </div>
       </div>
-
+      {/* Highlighted Testimonials Section - Place after Hero Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-16 md:mb-24">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 text-center">
+          What Clients Say
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {reviews.slice(0, 3).map((review, index) => (
+            <div
+              key={index}
+              className="bg-gray-800/30 backdrop-blur-lg rounded-lg p-4 border border-gray-700/50"
+            >
+              <div className="flex items-center gap-2 mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                ))}
+                <span className="text-yellow-400 ml-1 text-sm font-semibold">
+                  {review.rating}
+                </span>
+              </div>
+              <div className="font-semibold text-white mb-1">{review.project}</div>
+              <div className="text-gray-400 text-sm mb-2">"{review.comment}"</div>
+              <div className="text-blue-400 text-xs font-semibold">{review.businessImpact}</div>
+            </div>
+          ))}
+        </div>
+      </div>
       {/* What I Offer Section - Mobile Optimized */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16 md:mb-24">
         <div className="text-center mb-10 md:mb-16">
