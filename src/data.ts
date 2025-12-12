@@ -15,7 +15,7 @@ import khanedu_lesson from "./assets/khanedu_lesson.png";
 import khanedu_quiz from "./assets/khanedu_quiz.png";
 import khanedu_subject from "./assets/khanedu_subject.png";
 
-import docgram_home from "./assets/docgram-home.png";
+import docgram_profile from "./assets/docgram-profile.png";
 import docgarm_chat from "./assets/docgarm-chat.png";
 import docgram_feed from "./assets/docgram-feed.png";
 import docgram_arch from "./assets/docgram-arch.png";
@@ -127,7 +127,7 @@ export const projects: Project[] = [
       "TypeScript",
       "AWS CloudFront",
     ],
-    imageUrls: [khanedu_arch, khanedu_main, khanedu_lesson, khanedu_quiz, khanedu_subject],
+    imageUrls: [ khanedu_main, khanedu_arch, khanedu_lesson, khanedu_quiz, khanedu_subject],
     link: "https://github.com/ikram98ai/khaneducation-web",
     featured: true,
     details: {
@@ -147,7 +147,7 @@ export const projects: Project[] = [
       "AI-powered social platform where users share PDFs in an Instagram-like feed. Documents come alive with integrated AI chat powered by Gemini and Pinecone.",
     category: "AI/RAG",
     techStack: ["FastAPI", "Serverless", "OpenAI API", "RAG", "React"],
-    imageUrls: [docgram_arch, docgram_home, docgarm_chat, docgram_feed],
+    imageUrls: [docgram_feed, docgram_arch, docgram_profile, docgarm_chat],
     link: "https://github.com/ikram98ai/docgram-web",
     featured: true,
     details: {

@@ -22,7 +22,7 @@ const Experience: React.FC = () => {
   };
 
   return (
-    <section id="experience" className="py-32 bg-apple-gray">
+    <section id="experience" className="py-32 bg-apple-gray overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         
         <div className="text-center mb-24">

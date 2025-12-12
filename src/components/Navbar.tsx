@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] ${
         scrolled 
-          ? 'bg-white/70 backdrop-blur-xl border-b border-gray-200/50 py-3 shadow-sm supports-[backdrop-filter]:bg-white/60' 
+          ? 'bg-white/70 backdrop-blur-xl border-b border-gray-200/50 py-3 shadow-sm supports-backdrop-filter:bg-white/60' 
           : 'bg-transparent py-6'
       }`}
     >

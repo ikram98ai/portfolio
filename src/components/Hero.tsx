@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <section id="hero" className="min-h-screen flex flex-col justify-center items-center pt-20 px-6 bg-white overflow-hidden relative">
       <div className="max-w-4xl mx-auto text-center z-10">
-        <h2 className="text-xl md:text-2xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-apple-blue to-purple-600 mb-6 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+        <h2 className="text-xl md:text-2xl font-medium text-transparent bg-clip-text bg-linear-to-r from-apple-blue to-purple-600 mb-6 opacity-0 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
           {personalInfo.title}
         </h2>
         
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
       </div>
       
       {/* Abstract Background Decoration */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-50 rounded-full blur-3xl opacity-30 -z-0 pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-50 rounded-full blur-3xl opacity-30 z-0 pointer-events-none"></div>
     </section>
   );
 };
