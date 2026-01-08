@@ -22,7 +22,7 @@ const Stats: React.FC = () => {
               <p className="text-gray-400 text-sm max-w-sm">Consistently exceeding client expectations with high-quality, scalable code.</p>
             </div>
             
-            <div className="mt-8 flex items-end gap-4 relative z-10">
+            <div className="mt-8 md:flex items-end gap-4 relative z-10">
               <div className="text-8xl font-bold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
                 {personalInfo.stats.success_rate}%
               </div>

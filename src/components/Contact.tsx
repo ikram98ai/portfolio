@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
         </div>
         
         <div className="mt-12 text-sm text-gray-600">
-          © {new Date().getFullYear()} Ikram Khan. All rights reserved. Design inspired by Apple.
+          © {new Date().getFullYear()} Ikram Khan. All rights reserved.
         </div>
       </div>
     </footer>

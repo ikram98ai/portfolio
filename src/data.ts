@@ -83,7 +83,7 @@ export const services: Service[] = [
 export const skills: Skill[] = [
   {
     category: "Programming Languages",
-    skills: ["Python", "Javascipt", "Typescript", "Mojo"],
+    skills: ["Python", "Rust", "Javascipt", "Typescript", "Mojo"],
   },
   {
     category: "Web Development",
@@ -104,7 +104,6 @@ export const skills: Skill[] = [
     skills: [
       "AWS SageMaker",
       "AWS Bedrock",
-      "vLLM",
       "Hugging Face",
       "Docker",
       "Terraform",
@@ -292,17 +291,17 @@ export const testimonials: Testimonial[] = [
   {
     id: "t2",
     quote:
-      "Ikram was absolutely incredible to work with. Not only is he a FANTASTIC developer who really knows what he is doing... he went above and beyond.",
-    author: "John Meyer @ Freshprint",
-    role: "LLaMA 3-Vision Fine-Tuning",
+    "I worked with Ikram Khan on developing a chatbot, and the results exceeded expectations. His expertise as an AI Engineer was evident... skillfully designed, implemented the chatbot to deliver accurate interactions.",
+    author: "Alona Belykh @ Eirvox",
+    role: "Chatbot Development",
     rating: 5,
   },
   {
     id: "t3",
     quote:
-      "I worked with Ikram Khan on developing a chatbot, and the results exceeded expectations. His expertise as an AI Engineer was evident... skillfully designed, implemented the chatbot to deliver accurate interactions.",
-    author: "Alona Belykh @ Eirvox",
-    role: "Chatbot Development",
+      "Ikram was absolutely incredible to work with. Not only is he a FANTASTIC developer who really knows what he is doing... he went above and beyond.",
+    author: "John Meyer @ Freshprint",
+    role: "LLaMA 3-Vision Fine-Tuning",
     rating: 5,
   },
   {

@@ -145,7 +145,7 @@ const Experience: React.FC = () => {
                    ))}
                 </div>
                 
-                <p className="text-2xl md:text-3xl font-medium text-apple-text italic leading-relaxed mb-8 max-w-4xl">
+                <p className="text-xl md:text-2xl font-medium text-apple-text italic leading-relaxed mb-8 max-w-4xl">
                   "{testimonials[currentTestimonial].quote}"
                 </p>
                 
