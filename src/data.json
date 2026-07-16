@@ -1,0 +1,286 @@
+{
+  "personalInfo": {
+    "name": "Ikram Khan",
+    "title": "Full-Stack AI Engineer",
+    "tagline": "Build, Deploy & Scale AI-Powered Applications.",
+    "summary": "I specialize in building, deploying, and scaling full-stack AI applications — from LLM-powered agents to Retrieval-Augmented Generation (RAG) systems — all production-ready on AWS.",
+    "location": "Remote / Global",
+    "stats": {
+      "rate": 30,
+      "projects": 16,
+      "success_rate": 100,
+      "rating": 5.0
+    },
+    "contact": {
+      "email": "ikram98ai@gmail.com",
+      "upwork": "https://www.upwork.com/freelancers/ikram98ai",
+      "linkedin": "https://www.linkedin.com/in/ikram98ai/",
+      "github": "https://github.com/ikram98ai"
+    }
+  },
+  "services": [
+    {
+      "title": "AI Agents & RAG Systems",
+      "desc": "Autonomous agents built with LangChain and grounded in production-grade RAG — assistants that understand intent, reason over complex documents, and answer accurately from your secure enterprise knowledge base."
+    },
+    {
+      "title": "Full-Stack AI Apps",
+      "desc": "End-to-end product builds pairing high-performance AI backends (Axum, FastAPI) with modern, responsive React frontends — clean APIs, streaming LLM responses, and a polished user experience from prototype to production."
+    },
+    {
+      "title": "DevOps & Deployment",
+      "desc": "Scalable, reproducible infrastructure on AWS SageMaker, Bedrock, and Hugging Face endpoints — containerized with Docker and provisioned with Terraform."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Programming Languages",
+      "skills": ["Python", "Rust", "JavaScript", "TypeScript"]
+    },
+    {
+      "category": "Web Development",
+      "skills": ["Axum", "FastAPI", "Django", "React.js"]
+    },
+    {
+      "category": "Generative AI",
+      "skills": [
+        "LangChain",
+        "OpenAI",
+        "Candle.rs",
+        "Llama.cpp"
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "skills": [
+        "AWS",
+        "HuggingFace",
+        "Docker",
+        "Terraform"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "khan-edu",
+      "title": "Khan Education",
+      "role": "Founding Engineer",
+      "description": "Open-source e-learning platform with interactive lessons, quizzes, and powerful admin tooling — delivered globally through a serverless AWS edge architecture.",
+      "category": "Full Stack",
+      "techStack": [
+        "React",
+        "Terraform",
+        "Amazon S3",
+        "TypeScript",
+        "AWS CloudFront"
+      ],
+      "imageUrls": [
+        "khanedu_main.png",
+        "khanedu_arch.png",
+        "khanedu_lesson.png",
+        "khanedu_quiz.png",
+        "khanedu_subject.png"
+      ],
+      "link": "https://github.com/ikram98ai/khaneducation-web",
+      "featured": true,
+      "details": {
+        "challenge": "Building a scalable, low-latency educational platform that handles dynamic content delivery and complex user administration globally.",
+        "solution": "Implemented a serverless architecture using AWS CloudFront for edge caching and S3 for static assets, managed via Terraform for reproducible infrastructure.",
+        "outcome": "Achieved sub-100ms load times for global users and reduced infrastructure costs by 40% compared to traditional EC2 hosting."
+      }
+    },
+    {
+      "id": "docgram",
+      "title": "Docgram",
+      "role": "Founding Engineer",
+      "description": "AI-powered social platform where users share PDFs in an Instagram-style feed — every document becomes conversational through integrated AI chat built on Gemini and Pinecone.",
+      "category": "AI/RAG",
+      "techStack": ["FastAPI", "Serverless", "OpenAI API", "RAG", "React"],
+      "imageUrls": [
+        "docgram-feed.png",
+        "docgram-arch.png",
+        "docgram-profile.png",
+        "docgarm-chat.png"
+      ],
+      "link": "https://github.com/ikram98ai/docgram-web",
+      "featured": true,
+      "details": {
+        "challenge": "Enabling meaningful social interaction around static PDF documents while providing instant, context-aware answers to user queries.",
+        "solution": "Developed a RAG pipeline using Pinecone for vector storage and Gemini for generation, integrated into a familiar social feed UI.",
+        "outcome": "Created a unique 'Chat with PDF' social experience, processing thousands of document pages with high retrieval accuracy."
+      }
+    },
+    {
+      "id": "mediscribe",
+      "title": "Mediscribe",
+      "role": "AI Engineer",
+      "description": "Healthcare proof of concept that transcribes patient consultations and generates clinical summaries using Gemini's audio and language capabilities.",
+      "category": "AI/RAG",
+      "techStack": ["FastAPI", "React", "Gemini", "AWS S3", "PynamoDB"],
+      "imageUrls": ["mediscribe.png"],
+      "link": "https://github.com/ikram98ai/mediscribe",
+      "featured": false,
+      "details": {
+        "challenge": "Accurately transcribing and summarizing complex medical terminology in real-time while ensuring data security.",
+        "solution": "Leveraged Gemini's multimodal capabilities for high-fidelity transcription and PynamoDB for secure metadata handling on AWS.",
+        "outcome": "Delivered a POC demonstrating 95% accuracy in medical term recognition and automated summarization for EMR entry."
+      }
+    },
+    {
+      "id": "health-agent",
+      "title": "Health AI Agent System",
+      "role": "Lead AI Developer",
+      "description": "Multi-agent system built on LangGraph that automates wellness checks, personalized video recommendations, and document Q&A.",
+      "category": "AI Agents",
+      "techStack": ["TypeScript", "LangChain", "LangGraph", "RAG", "MongoDB"],
+      "imageUrls": ["health_web.png", "health_arch.png"],
+      "link": "https://github.com/ikram98ai/health_agent",
+      "featured": true,
+      "details": {
+        "challenge": "Orchestrating multiple specialized AI agents (Wellness, Video, Classes) to provide a cohesive user experience without hallucinations.",
+        "solution": "Built a stateful multi-agent system using LangGraph to route requests intelligently between vector DBs and external APIs.",
+        "outcome": "Streamlined patient engagement workflows, reducing manual wellness check calls by automating initial triage."
+      }
+    },
+    {
+      "id": "passport",
+      "title": "Secure Passport Extractor",
+      "role": "Lead Developer",
+      "description": "Fast, secure identity-verification app that extracts passport data via MRZ parsing and confirms identity by face-matching against a selfie.",
+      "category": "Computer Vision",
+      "techStack": ["FastAPI", "DevOps", "Python", "AWS", "Computer Vision"],
+      "imageUrls": ["passport.png"],
+      "link": "https://github.com/ikram98ai/passport_verification",
+      "featured": false,
+      "details": {
+        "challenge": "Automating identity verification with high reliability to prevent fraud in a high-stakes environment.",
+        "solution": "Integrated MRZ parsing libraries with custom face-matching algorithms and deployed on a secure AWS environment.",
+        "outcome": "Reduced identity verification time from minutes to seconds with a high confidence score for fraud detection."
+      }
+    },
+    {
+      "id": "retail-inventory-optimization",
+      "title": "Retail Inventory Optimization",
+      "role": "Data Scientist",
+      "description": "Automated demand-forecasting pipeline built with XGBoost on AWS that optimizes retail inventory — cutting carrying costs while sharply improving forecast accuracy.",
+      "category": "Predictive Analytics",
+      "techStack": ["XGBoost", "AWS SageMaker", "AutoML Pipeline", "Forecasting"],
+      "imageUrls": ["retail_arch.png"],
+      "link": "https://github.com/ikram98ai/fakenews_detection_bert_aws_pipeline",
+      "featured": false,
+      "details": {
+        "challenge": "A retail chain was losing $5M annually to overstock and stockouts, with manual forecasting taking 3 days per product.",
+        "solution": "Created a self-service XGBoost pipeline on AWS that auto-generates optimized sell-through forecasts for any product.",
+        "outcome": "Improved forecast accuracy to 92%, reduced inventory costs by 15%, and cut forecasting time from 6 hours to under 15 minutes."
+      }
+    },
+    {
+      "id": "fake-news",
+      "title": "RoBERTa Fake-news Pipeline",
+      "role": "ML Engineer",
+      "description": "End-to-end AWS SageMaker pipeline for fake-news detection — automated preprocessing, RoBERTa training, evaluation, and deployment.",
+      "category": "ML Ops",
+      "techStack": ["Python", "AWS SageMaker", "PyTorch", "MLOps"],
+      "imageUrls": ["news_arch.png"],
+      "link": "https://github.com/ikram98ai/fakenews_detection_bert_aws_pipeline",
+      "featured": false,
+      "details": {
+        "challenge": "Creating a reproducible, end-to-end ML pipeline that automatically retrains and deploys models as new data arrives.",
+        "solution": "Architected a SageMaker pipeline covering preprocessing to deployment, using RoBERTa for state-of-the-art NLP performance.",
+        "outcome": "Established a robust MLOps workflow, ensuring the fake news detection model remains current with evolving misinformation trends."
+      }
+    }
+  ],
+  "experience": [
+    {
+      "id": "upwork",
+      "role": "AI Engineer",
+      "company": "Upwork",
+      "period": "Apr 2024 - Present",
+      "description": "Completed 16+ client projects focused on RAG systems, LLM fine-tuning, and chatbot development — maintaining a perfect 5.0/5.0 rating."
+    },
+    {
+      "id": "fiverr",
+      "role": "Data Analyst",
+      "company": "Fiverr",
+      "period": "Jan 2022 - Mar 2024",
+      "description": "Cleaned and analyzed large datasets with Python and built predictive models to improve customer satisfaction."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "t1",
+      "quote": "Working with Ikram was 10/10 great once again. Looking forward to continuing to work together!",
+      "author": "John Meyer @ Freshprint",
+      "role": "RAG Compliance System",
+      "rating": 5
+    },
+    {
+      "id": "t2",
+      "quote": "I worked with Ikram Khan on developing a chatbot, and the results exceeded expectations. His expertise as an AI Engineer was evident... skillfully designed, implemented the chatbot to deliver accurate interactions.",
+      "author": "Alona Belykh @ Eirvox",
+      "role": "Chatbot Development",
+      "rating": 5
+    },
+    {
+      "id": "t3",
+      "quote": "Ikram was absolutely incredible to work with. Not only is he a FANTASTIC developer who really knows what he is doing... he went above and beyond.",
+      "author": "John Meyer @ Freshprint",
+      "role": "LLaMA 3-Vision Fine-Tuning",
+      "rating": 5
+    },
+    {
+      "id": "t4",
+      "quote": "Great job creating the python script I required. Great speed, communication and knowledge.",
+      "author": "Michael Ratcliffe @ Upwork",
+      "role": "Python Automation",
+      "rating": 5
+    },
+    {
+      "id": "t5",
+      "quote": "Ikram is really on time and does great work to both explain the methodology he is using and deliver timely.",
+      "author": "Simon Edstrom @ Serculate AB",
+      "role": "ML Pipeline Deployment",
+      "rating": 5
+    }
+  ],
+  "education": [
+    {
+      "institution": "Balochistan University of IT and Management Sciences",
+      "degree": "Bachelor of Science in Software Engineering",
+      "year": "2019 - 2022"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Rust Programming Specialization",
+      "provider": "Duke University",
+      "issued": "May 2026",
+      "link": "https://coursera.org/verify/specialization/3THUW9L44ELL"
+    },
+    {
+      "name": "Large Language Model Operations (LLMOps)",
+      "provider": "Duke University",
+      "issued": "Jul 2025",
+      "link": "https://coursera.org/verify/specialization/KKH2RGT3YG23"
+    },
+    {
+      "name": "Data Engineering Specialization",
+      "provider": "DeepLearning.ai",
+      "issued": "Apr 2025",
+      "link": "https://coursera.org/verify/professional-cert/8K0W2LFDARKW"
+    },
+    {
+      "name": "Meta Full-Stack Engineer",
+      "provider": "Meta",
+      "issued": "May 2024",
+      "link": "https://www.credly.com/go/j4CUW2zY"
+    },
+    {
+      "name": "Machine Learning Specialization",
+      "provider": "Deeplearning.ai",
+      "issued": "Sep 2023",
+      "link": "https://coursera.org/verify/specialization/DJ3DNR43P5ZG"
+    }
+  ]
+}

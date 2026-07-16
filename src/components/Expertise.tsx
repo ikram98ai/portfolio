@@ -14,7 +14,9 @@ import {
   ChevronDown,
   ChevronUp,
 } from "lucide-react";
-import { skills, services } from "../data";
+import data from "../data.json";
+
+const { skills, services } = data;
 
 const getIconForCategory = (category: string) => {
   if (category.toLowerCase().includes("programming"))

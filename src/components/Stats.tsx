@@ -1,6 +1,8 @@
 import React from 'react';
 import { Award, Briefcase, Star, CheckCircle2 } from 'lucide-react';
-import { personalInfo } from '../data';
+import data from '../data.json';
+
+const { personalInfo } = data;
 
 const Stats: React.FC = () => {
   return (

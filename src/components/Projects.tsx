@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
-import { projects } from '../data';
+import data from '../data.json';
+import type { Project } from '../types';
 import { ExternalLink, ChevronDown, ChevronUp, Layers, Cpu, Globe, Maximize2, X, ChevronLeft, ChevronRight, ImageIcon } from 'lucide-react';
+
+// Resolve asset filenames from data.json to bundled image URLs
+const images = import.meta.glob<string>('../assets/*.png', {
+  eager: true,
+  import: 'default',
+});
+
+const projects: Project[] = data.projects.map((project) => ({
+  ...project,
+  imageUrls: project.imageUrls.map((name) => images[`../assets/${name}`] ?? ''),
+}));
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState('All');

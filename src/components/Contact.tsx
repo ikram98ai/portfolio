@@ -1,6 +1,8 @@
 import React from 'react';
-import { personalInfo } from '../data';
+import data from '../data.json';
 import { Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
+
+const { personalInfo } = data;
 
 const Contact: React.FC = () => {
   return (

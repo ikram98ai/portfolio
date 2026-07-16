@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { experience, education, certifications, testimonials } from '../data';
+import data from '../data.json';
 import { Briefcase, GraduationCap, Award, Star, Quote, ChevronLeft, ChevronRight, Calendar, Building2, ExternalLink } from 'lucide-react';
+
+const { experience, education, certifications, testimonials } = data;
 
 const Experience: React.FC = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);

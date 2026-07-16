@@ -1,6 +1,8 @@
 import React from 'react';
-import { personalInfo } from '../data';
+import data from '../data.json';
 import { ArrowDown } from 'lucide-react';
+
+const { personalInfo } = data;
 
 const Hero: React.FC = () => {
   return (
