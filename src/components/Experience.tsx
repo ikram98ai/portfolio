@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import data from '../data.json';
 import { Briefcase, GraduationCap, Award, Star, Quote, ChevronLeft, ChevronRight, Calendar, Building2, ExternalLink } from 'lucide-react';
+import Reveal from './fx/Reveal';
 
 const { experience, education, certifications, testimonials } = data;
 
@@ -27,17 +28,17 @@ const Experience: React.FC = () => {
     <section id="experience" className="py-32 bg-apple-gray overflow-hidden">
       <div className="max-w-6xl mx-auto px-6">
         
-        <div className="text-center mb-24">
+        <Reveal className="text-center mb-24">
            <h2 className="text-4xl md:text-5xl font-bold text-apple-text tracking-tight mb-4">Trajectory.</h2>
            <p className="text-xl text-gray-500 max-w-2xl mx-auto">
              A timeline of consistent delivery, continuous learning, and professional excellence.
            </p>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 mb-32">
-          
+
           {/* Employment Column */}
-          <div>
+          <Reveal from="left">
             <div className="flex items-center gap-3 mb-10 pb-4 border-b border-gray-200">
               <div className="p-2 bg-blue-100 rounded-lg text-apple-blue">
                 <Briefcase size={24} />
@@ -69,10 +70,10 @@ const Experience: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </Reveal>
 
           {/* Education & Certs Column */}
-          <div>
+          <Reveal from="right" delay={120}>
              <div className="flex items-center gap-3 mb-10 pb-4 border-b border-gray-200">
               <div className="p-2 bg-purple-100 rounded-lg text-purple-600">
                 <Award size={24} />
@@ -126,11 +127,11 @@ const Experience: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </Reveal>
         </div>
 
         {/* Testimonials Carousel */}
-        <div className="relative mt-20">
+        <Reveal from="scale" className="relative mt-20">
            {/* Decorative Elements */}
            <div className="absolute -top-10 -left-10 w-20 h-20 bg-yellow-400/20 rounded-full blur-2xl"></div>
            <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -140,7 +141,7 @@ const Experience: React.FC = () => {
                <Quote size={40} fill="currentColor" className="opacity-20" />
              </div>
 
-             <div className="min-h-[180px] flex flex-col justify-center items-center transition-all duration-500">
+             <div key={currentTestimonial} className="min-h-[180px] flex flex-col justify-center items-center animate-fade-in-up">
                 <div className="flex gap-1 mb-6 text-yellow-400">
                    {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
                      <Star key={i} size={20} fill="currentColor" />
@@ -186,7 +187,7 @@ const Experience: React.FC = () => {
                 </button>
              </div>
            </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

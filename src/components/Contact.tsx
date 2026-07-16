@@ -1,6 +1,7 @@
 import React from 'react';
 import data from '../data.json';
 import { Mail, Github, Linkedin, ArrowRight } from 'lucide-react';
+import Reveal from './fx/Reveal';
 
 const { personalInfo } = data;
 
@@ -9,20 +10,22 @@ const Contact: React.FC = () => {
     <footer id="contact" className="bg-apple-dark text-white pt-24 pb-12">
       <div className="max-w-4xl mx-auto px-6 text-center">
         
-        <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
-          Ready to scale your AI?
-        </h2>
-        
-        <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
-          I'm currently available for freelance projects and consulting. Let's build something intelligent together.
-        </p>
+        <Reveal>
+          <h2 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
+            Ready to scale your AI?
+          </h2>
 
-        <a 
-          href={personalInfo.contact.upwork} 
-          className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-lg font-bold hover:bg-gray-200 transition-colors mb-20"
-        >
-          Get in Touch <ArrowRight size={20} />
-        </a>
+          <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
+            I'm currently available for freelance projects and consulting. Let's build something intelligent together.
+          </p>
+
+          <a
+            href={personalInfo.contact.upwork}
+            className="group inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-lg font-bold mb-20 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.35)] active:scale-95"
+          >
+            Get in Touch <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
+          </a>
+        </Reveal>
 
         <div className="border-t border-gray-800 pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-left">

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import data from '../data.json';
 import type { Project } from '../types';
 import { ExternalLink, ChevronDown, ChevronUp, Layers, Cpu, Globe, Maximize2, X, ChevronLeft, ChevronRight, ImageIcon } from 'lucide-react';
+import Reveal from './fx/Reveal';
+import TiltCard from './fx/TiltCard';
 
 // Resolve asset filenames from data.json to bundled image URLs
 const images = import.meta.glob<string>('../assets/*.png', {
@@ -71,7 +73,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="mb-12 text-center md:text-left">
+        <Reveal className="mb-12 text-center md:text-left">
            <h2 className="text-4xl md:text-5xl font-bold text-apple-text tracking-tight mb-4">
             Selected Work.
           </h2>
@@ -95,23 +97,29 @@ const Projects: React.FC = () => {
               </button>
             ))}
           </div>
-        </div>
+        </Reveal>
 
         <div className="space-y-16">
           {filteredProjects.map((project, index) => (
-            <div 
-              key={project.id} 
+            <div
+              key={project.id}
               className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-8 md:gap-12 items-start transition-all duration-500 ease-in-out`}
             >
               {/* Image Side */}
-              <div 
-                className="w-full md:w-3/5 group cursor-pointer rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 bg-gray-50 overflow-hidden relative" 
+              <Reveal from={index % 2 === 0 ? 'left' : 'right'} className="w-full md:w-3/5">
+              <TiltCard
+                maxTilt={4}
+                hoverScale={1.01}
+                glareOpacity={0.15}
+                className="group cursor-pointer rounded-3xl shadow-lg hover:shadow-2xl transition-shadow duration-500 border border-gray-100 bg-gray-50 overflow-hidden"
                 onClick={(e) => openLightbox(e, project.id, 0)}
               >
                 <div className="relative overflow-hidden aspect-video">
-                  <img 
-                    src={project.imageUrls[0]} 
-                    alt={project.title} 
+                  <img
+                    src={project.imageUrls[0]}
+                    alt={project.title}
+                    loading="lazy"
+                    decoding="async"
                     className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   />
                   
@@ -138,10 +146,11 @@ const Projects: React.FC = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </TiltCard>
+              </Reveal>
 
               {/* Content Side */}
-              <div className="w-full md:w-2/5 space-y-6 pt-4">
+              <Reveal from={index % 2 === 0 ? 'right' : 'left'} delay={120} className="w-full md:w-2/5 space-y-6 pt-4">
                 <div className="flex items-center gap-3">
                    <span className="inline-block px-3 py-1 bg-blue-50 text-apple-blue rounded-full text-xs font-bold uppercase tracking-wide">
                     {project.category}
@@ -211,7 +220,7 @@ const Projects: React.FC = () => {
                     )}
                   </div>
                 </div>
-              </div>
+              </Reveal>
             </div>
           ))}
         </div>

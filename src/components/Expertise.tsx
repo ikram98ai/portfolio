@@ -15,6 +15,8 @@ import {
   ChevronUp,
 } from "lucide-react";
 import data from "../data.json";
+import Reveal from "./fx/Reveal";
+import TiltCard from "./fx/TiltCard";
 
 const { skills, services } = data;
 
@@ -53,7 +55,7 @@ const Expertise: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="mb-20 max-w-3xl">
+        <Reveal className="mb-20 max-w-3xl">
           <h2 className="text-5xl md:text-7xl font-semibold tracking-tight mb-6">
             What I Can Build.
           </h2>
@@ -61,21 +63,23 @@ const Expertise: React.FC = () => {
             End-to-end intelligence. From architectural blueprints to
             production-ready deployment.
           </p>
-        </div>
+        </Reveal>
 
         {/* Service Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
-          {services.map((service) => (
-            <ServiceCard
-              key={service.title}
-              icon={getIconForService(service.title)}
-              title={service.title}
-              desc={service.desc}
-            />
+          {services.map((service, index) => (
+            <Reveal key={service.title} delay={(index % 3) * 120}>
+              <ServiceCard
+                icon={getIconForService(service.title)}
+                title={service.title}
+                desc={service.desc}
+              />
+            </Reveal>
           ))}
         </div>
 
         {/* The Toolkit Section */}
+        <Reveal from="scale">
         <div className="bg-[#1c1c1e] border border-gray-800 rounded-[40px] p-6 md:p-12">
           <div className="flex items-center gap-3 mb-6 md:mb-10">
             <Terminal className="text-gray-400" size={24} />
@@ -93,6 +97,7 @@ const Expertise: React.FC = () => {
             ))}
           </div>
         </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -103,13 +108,17 @@ const ServiceCard: React.FC<{
   title: string;
   desc: string;
 }> = ({ icon, title, desc }) => (
-  <div className="group p-8 rounded-3xl bg-[#151516] border border-gray-800 hover:border-gray-600 transition-colors duration-300">
-    <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300 ease-out">
+  <TiltCard
+    maxTilt={8}
+    glareOpacity={0.08}
+    className="group h-full p-8 rounded-3xl bg-[#151516] border border-gray-800 hover:border-gray-600 transition-colors duration-300 spotlight-card"
+  >
+    <div className="mb-6 tilt-depth transform group-hover:scale-110 transition-transform duration-300 ease-out">
       {icon}
     </div>
     <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
     <p className="text-gray-400 leading-relaxed text-sm md:text-base">{desc}</p>
-  </div>
+  </TiltCard>
 );
 
 const ToolkitColumn: React.FC<{

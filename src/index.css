@@ -14,6 +14,16 @@
   --ls-tighter: -0.05em;
 }
 
+/* Off-screen scroll-reveal transforms (translateX) extend the page's
+   scrollable area, which makes mobile browsers pan horizontally.
+   Clip it at the root; `clip` avoids creating a scroll container
+   (`hidden` is the fallback for older browsers). */
+html,
+body {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,14 +45,16 @@ body {
 }
 
 /* Keyframes */
+/* Uses the individual `translate` property so it composes with any
+   inline `transform` (e.g. translateZ depth inside a 3D scene). */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
+    translate: 0 20px;
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    translate: 0 0;
   }
 }
 @keyframes fadeIn {
@@ -54,10 +66,167 @@ body {
   }
 }
 
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(30px, -40px, 0) scale(1.08);
+  }
+  66% {
+    transform: translate3d(-25px, 25px, 0) scale(0.95);
+  }
+}
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
 /* Animation utilities */
 .animate-fade-in-up {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 .animate-fade-in {
   animation: fadeIn 1s ease-out forwards;
+}
+.animate-float-slow {
+  animation: floatSlow 14s ease-in-out infinite;
+}
+.animate-float-slower {
+  animation: floatSlow 20s ease-in-out infinite reverse;
+}
+.animate-spin-slow {
+  animation: spinSlow 40s linear infinite;
+}
+
+/* Shimmering gradient text (Apple "hello" style) */
+.text-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 6s linear infinite;
+}
+/* Both classes set the `animation` shorthand — compose them explicitly
+   so the entrance fade still runs alongside the shimmer. */
+.text-shimmer.animate-fade-in-up {
+  animation:
+    fadeInUp 0.8s ease-out forwards,
+    shimmer 6s linear infinite;
+}
+
+/* ---------- Scroll reveal ---------- */
+/* Opacity + transform only: filter/blur transitions on large subtrees
+   cause severe scroll jank, and permanent will-change bloats GPU memory. */
+.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-from-bottom {
+  transform: translateY(36px) scale(0.985);
+}
+.reveal-from-left {
+  transform: translateX(-40px);
+}
+.reveal-from-right {
+  transform: translateX(40px);
+}
+.reveal-from-scale {
+  transform: scale(0.92);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Soft glow orb: a pre-faded radial gradient reads the same as a
+   blur()-ed disc but costs nothing to composite while it animates.
+   Fades to a zero-alpha stop of the SAME hue — the `transparent`
+   keyword interpolates via black and leaves a gray edge on white. */
+.orb {
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle closest-side,
+    rgba(var(--orb-rgb), var(--orb-alpha, 0.6)) 0%,
+    rgba(var(--orb-rgb), calc(var(--orb-alpha, 0.6) * 0.55)) 40%,
+    rgba(var(--orb-rgb), calc(var(--orb-alpha, 0.6) * 0.2)) 62%,
+    rgba(var(--orb-rgb), 0) 82%
+  );
+}
+
+/* ---------- 3D tilt card ---------- */
+.tilt-card {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.tilt-glare {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 5;
+  opacity: calc(var(--glare-o, 0) * 1);
+  background: radial-gradient(
+    circle at var(--glare-x, 50%) var(--glare-y, 50%),
+    rgba(255, 255, 255, var(--glare-max, 0.22)),
+    transparent 65%
+  );
+  transition: opacity 0.4s ease;
+}
+
+/* Lift children for real parallax depth inside a tilted card */
+.tilt-depth {
+  transform: translateZ(40px);
+  transform-style: preserve-3d;
+}
+
+/* ---------- Spotlight border (dark cards) ---------- */
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: calc(var(--glare-o, 0) * 1);
+  background: radial-gradient(
+    360px circle at var(--glare-x, 50%) var(--glare-y, 50%),
+    rgba(0, 113, 227, 0.18),
+    transparent 70%
+  );
+  transition: opacity 0.4s ease;
+}
+
+/* ---------- Accessibility ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  .animate-float-slow,
+  .animate-float-slower,
+  .animate-spin-slow,
+  .text-shimmer,
+  .animate-fade-in-up,
+  .animate-fade-in {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
 }
