@@ -45,6 +45,11 @@ export interface Skill {
   skills: string[];
 }
 
+export interface PersonalInfoHeadline {
+  headline: string;
+  headlineAccent: string;
+}
+
 export interface Service {
   title: string;
   desc: string;

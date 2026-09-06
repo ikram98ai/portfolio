@@ -29,7 +29,7 @@ const Experience: React.FC = () => {
       <div className="max-w-6xl mx-auto px-6">
         
         <Reveal className="text-center mb-24">
-           <h2 className="text-4xl md:text-5xl font-bold text-apple-text tracking-tight mb-4">Trajectory.</h2>
+           <h2 className="text-4xl md:text-5xl font-bold text-apple-text tracking-tight mb-4">Experience &amp; Certifications.</h2>
            <p className="text-xl text-gray-500 max-w-2xl mx-auto">
              A timeline of consistent delivery, continuous learning, and professional excellence.
            </p>
@@ -161,7 +161,7 @@ const Experience: React.FC = () => {
              {/* Carousel Controls */}
              <div className="flex items-center justify-center gap-8 mt-12">
                 <button 
-                  onClick={prevTestimonial}
+                  onClick={prevTestimonial} aria-label="Previous testimonial"
                   className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-apple-text hover:border-gray-400 transition-all active:scale-95"
                 >
                   <ChevronLeft size={20} />
@@ -172,6 +172,8 @@ const Experience: React.FC = () => {
                     <button 
                       key={idx}
                       onClick={() => setCurrentTestimonial(idx)}
+                      aria-label={`Show testimonial ${idx + 1}`}
+                      aria-current={idx === currentTestimonial}
                       className={`h-1.5 rounded-full transition-all duration-300 ${
                         idx === currentTestimonial ? 'w-8 bg-apple-blue' : 'w-2 bg-gray-300 hover:bg-gray-400'
                       }`}
@@ -180,7 +182,7 @@ const Experience: React.FC = () => {
                 </div>
 
                 <button 
-                  onClick={nextTestimonial}
+                  onClick={nextTestimonial} aria-label="Next testimonial"
                   className="w-12 h-12 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:text-apple-text hover:border-gray-400 transition-all active:scale-95"
                 >
                   <ChevronRight size={20} />

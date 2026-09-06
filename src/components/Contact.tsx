@@ -21,9 +21,11 @@ const Contact: React.FC = () => {
 
           <a
             href={personalInfo.contact.upwork}
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-lg font-bold mb-20 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.35)] active:scale-95"
           >
-            Get in Touch <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
+            Hire me on Upwork <ArrowRight size={20} className="transition-transform duration-300 group-hover:translate-x-1" />
           </a>
         </Reveal>
 
@@ -34,13 +36,13 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="flex gap-6">
-            <a href={personalInfo.contact.github} className="text-gray-400 hover:text-white transition-colors">
+            <a href={personalInfo.contact.github} target="_blank" rel="me noopener noreferrer" aria-label="Ikram Khan on GitHub" className="text-gray-400 hover:text-white transition-colors">
               <Github size={24} />
             </a>
-            <a href={personalInfo.contact.linkedin} className="text-gray-400 hover:text-white transition-colors">
+            <a href={personalInfo.contact.linkedin} target="_blank" rel="me noopener noreferrer" aria-label="Ikram Khan on LinkedIn" className="text-gray-400 hover:text-white transition-colors">
               <Linkedin size={24} />
             </a>
-            <a href={personalInfo.contact.email} className="text-gray-400 hover:text-white transition-colors">
+            <a href={`mailto:${personalInfo.contact.email}`} aria-label="Email Ikram Khan" className="text-gray-400 hover:text-white transition-colors">
               <Mail size={24} />
             </a>
           </div>

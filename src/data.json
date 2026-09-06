@@ -2,12 +2,12 @@
   "personalInfo": {
     "name": "Ikram Khan",
     "title": "Full-Stack AI Engineer",
-    "tagline": "Build, Deploy & Scale AI-Powered Applications.",
-    "summary": "I specialize in building, deploying, and scaling full-stack AI applications — from LLM-powered agents to Retrieval-Augmented Generation (RAG) systems — all production-ready on AWS.",
+    "tagline": "I build, deploy, and scale AI-powered applications for startups and SaaS teams.",
+    "summary": "Top Rated Upwork freelancer specializing in production LLM applications: Retrieval-Augmented Generation (RAG) systems, LLM fine-tuning, AI agents with LangChain and LangGraph, and full-stack AI apps on AWS with Python, FastAPI, Rust, and React.",
     "location": "Remote / Global",
     "stats": {
-      "rate": 30,
-      "projects": 16,
+      "rate": 45,
+      "projects": 18,
       "success_rate": 100,
       "rating": 5.0
     },
@@ -16,54 +16,68 @@
       "upwork": "https://www.upwork.com/freelancers/ikram98ai",
       "linkedin": "https://www.linkedin.com/in/ikram98ai/",
       "github": "https://github.com/ikram98ai"
-    }
+    },
+    "headline": "AI Engineer.",
+    "headlineAccent": "RAG, LLMs & Agents, shipped."
   },
   "services": [
     {
       "title": "AI Agents & RAG Systems",
-      "desc": "Autonomous agents built with LangChain and grounded in production-grade RAG — assistants that understand intent, reason over complex documents, and answer accurately from your secure enterprise knowledge base."
+      "desc": "Tool-using AI agents and production RAG pipelines built with LangChain and LangGraph: hybrid search, reranking, and evaluation so your assistant answers accurately from your own documents and knowledge base."
     },
     {
       "title": "Full-Stack AI Apps",
-      "desc": "End-to-end product builds pairing high-performance AI backends (Axum, FastAPI) with modern, responsive React frontends — clean APIs, streaming LLM responses, and a polished user experience from prototype to production."
+      "desc": "End-to-end product builds pairing high-performance AI backends (FastAPI, Axum, Django) with responsive React frontends: clean APIs, streaming LLM responses, and secure multi-tenant data isolation."
     },
     {
-      "title": "DevOps & Deployment",
-      "desc": "Scalable, reproducible infrastructure on AWS SageMaker, Bedrock, and Hugging Face endpoints — containerized with Docker and provisioned with Terraform."
+      "title": "LLM Fine-Tuning & MLOps",
+      "desc": "Fine-tune open-source LLMs and vision models (LLaMA 3, Hugging Face) on your data, then deploy on AWS SageMaker, Bedrock, or Hugging Face endpoints with Docker and Terraform."
     }
   ],
   "skills": [
     {
       "category": "Programming Languages",
-      "skills": ["Python", "Rust", "JavaScript", "TypeScript"]
+      "skills": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "Rust"
+      ]
     },
     {
       "category": "Web Development",
-      "skills": ["Axum", "FastAPI", "Django", "React.js"]
+      "skills": [
+        "FastAPI",
+        "Django",
+        "React.js",
+        "Axum"
+      ]
     },
     {
       "category": "Generative AI",
       "skills": [
         "LangChain",
         "OpenAI",
-        "Candle.rs",
-        "Llama.cpp"
+        "HuggingFace",
+        "Ollama",
+        "Candle.rs"
       ]
     },
     {
       "category": "Cloud & DevOps",
       "skills": [
-        "AWS",
-        "HuggingFace",
+        "AWS Cloud",
         "Docker",
-        "Terraform"
+        "Terraform",
+        "CI/CD",
+        "Kubernetes"
       ]
     }
   ],
   "projects": [
     {
       "id": "khan-edu",
-      "title": "Khan Education",
+      "title": "Khan Education: AI-Powered E-Learning Platform",
       "role": "Founding Engineer",
       "description": "Open-source e-learning platform with interactive lessons, quizzes, and powerful admin tooling — delivered globally through a serverless AWS edge architecture.",
       "category": "Full Stack",
@@ -81,7 +95,7 @@
         "khanedu_quiz.png",
         "khanedu_subject.png"
       ],
-      "link": "https://github.com/ikram98ai/khaneducation-web",
+      "link": "https://github.com/ikram98ai/khaneducation",
       "featured": true,
       "details": {
         "challenge": "Building a scalable, low-latency educational platform that handles dynamic content delivery and complex user administration globally.",
@@ -91,18 +105,24 @@
     },
     {
       "id": "docgram",
-      "title": "Docgram",
+      "title": "Docgram: Chat-with-PDF RAG Social Platform",
       "role": "Founding Engineer",
       "description": "AI-powered social platform where users share PDFs in an Instagram-style feed — every document becomes conversational through integrated AI chat built on Gemini and Pinecone.",
       "category": "AI/RAG",
-      "techStack": ["FastAPI", "Serverless", "OpenAI API", "RAG", "React"],
+      "techStack": [
+        "FastAPI",
+        "Serverless",
+        "OpenAI API",
+        "RAG",
+        "React"
+      ],
       "imageUrls": [
         "docgram-feed.png",
         "docgram-arch.png",
         "docgram-profile.png",
         "docgarm-chat.png"
       ],
-      "link": "https://github.com/ikram98ai/docgram-web",
+      "link": "https://github.com/ikram98ai/docgram",
       "featured": true,
       "details": {
         "challenge": "Enabling meaningful social interaction around static PDF documents while providing instant, context-aware answers to user queries.",
@@ -112,13 +132,20 @@
     },
     {
       "id": "mediscribe",
-      "title": "Mediscribe",
+      "title": "Mediscribe: AI Medical Transcription & Clinical Summaries",
       "role": "AI Engineer",
       "description": "Healthcare proof of concept that transcribes patient consultations and generates clinical summaries using Gemini's audio and language capabilities.",
       "category": "AI/RAG",
-      "techStack": ["FastAPI", "React", "Gemini", "AWS S3", "PynamoDB"],
-      "imageUrls": ["mediscribe.png"],
-      "link": "https://github.com/ikram98ai/mediscribe",
+      "techStack": [
+        "FastAPI",
+        "React",
+        "Gemini",
+        "AWS S3",
+        "PynamoDB"
+      ],
+      "imageUrls": [
+        "mediscribe.png"
+      ],
       "featured": false,
       "details": {
         "challenge": "Accurately transcribing and summarizing complex medical terminology in real-time while ensuring data security.",
@@ -128,13 +155,21 @@
     },
     {
       "id": "health-agent",
-      "title": "Health AI Agent System",
+      "title": "Health AI Agent System: LangGraph Multi-Agent Workflow",
       "role": "Lead AI Developer",
       "description": "Multi-agent system built on LangGraph that automates wellness checks, personalized video recommendations, and document Q&A.",
       "category": "AI Agents",
-      "techStack": ["TypeScript", "LangChain", "LangGraph", "RAG", "MongoDB"],
-      "imageUrls": ["health_web.png", "health_arch.png"],
-      "link": "https://github.com/ikram98ai/health_agent",
+      "techStack": [
+        "TypeScript",
+        "LangChain",
+        "LangGraph",
+        "RAG",
+        "MongoDB"
+      ],
+      "imageUrls": [
+        "health_web.png",
+        "health_arch.png"
+      ],
       "featured": true,
       "details": {
         "challenge": "Orchestrating multiple specialized AI agents (Wellness, Video, Classes) to provide a cohesive user experience without hallucinations.",
@@ -144,13 +179,20 @@
     },
     {
       "id": "passport",
-      "title": "Secure Passport Extractor",
+      "title": "Passport MRZ Extraction & Face Verification",
       "role": "Lead Developer",
       "description": "Fast, secure identity-verification app that extracts passport data via MRZ parsing and confirms identity by face-matching against a selfie.",
       "category": "Computer Vision",
-      "techStack": ["FastAPI", "DevOps", "Python", "AWS", "Computer Vision"],
-      "imageUrls": ["passport.png"],
-      "link": "https://github.com/ikram98ai/passport_verification",
+      "techStack": [
+        "FastAPI",
+        "DevOps",
+        "Python",
+        "AWS",
+        "Computer Vision"
+      ],
+      "imageUrls": [
+        "passport.png"
+      ],
       "featured": false,
       "details": {
         "challenge": "Automating identity verification with high reliability to prevent fraud in a high-stakes environment.",
@@ -160,13 +202,19 @@
     },
     {
       "id": "retail-inventory-optimization",
-      "title": "Retail Inventory Optimization",
+      "title": "Retail Demand Forecasting with XGBoost on SageMaker",
       "role": "Data Scientist",
       "description": "Automated demand-forecasting pipeline built with XGBoost on AWS that optimizes retail inventory — cutting carrying costs while sharply improving forecast accuracy.",
       "category": "Predictive Analytics",
-      "techStack": ["XGBoost", "AWS SageMaker", "AutoML Pipeline", "Forecasting"],
-      "imageUrls": ["retail_arch.png"],
-      "link": "https://github.com/ikram98ai/fakenews_detection_bert_aws_pipeline",
+      "techStack": [
+        "XGBoost",
+        "AWS SageMaker",
+        "AutoML Pipeline",
+        "Forecasting"
+      ],
+      "imageUrls": [
+        "retail_arch.png"
+      ],
       "featured": false,
       "details": {
         "challenge": "A retail chain was losing $5M annually to overstock and stockouts, with manual forecasting taking 3 days per product.",
@@ -176,13 +224,19 @@
     },
     {
       "id": "fake-news",
-      "title": "RoBERTa Fake-news Pipeline",
+      "title": "RoBERTa Fake News Detection: SageMaker MLOps Pipeline",
       "role": "ML Engineer",
       "description": "End-to-end AWS SageMaker pipeline for fake-news detection — automated preprocessing, RoBERTa training, evaluation, and deployment.",
       "category": "ML Ops",
-      "techStack": ["Python", "AWS SageMaker", "PyTorch", "MLOps"],
-      "imageUrls": ["news_arch.png"],
-      "link": "https://github.com/ikram98ai/fakenews_detection_bert_aws_pipeline",
+      "techStack": [
+        "Python",
+        "AWS SageMaker",
+        "PyTorch",
+        "MLOps"
+      ],
+      "imageUrls": [
+        "news_arch.png"
+      ],
       "featured": false,
       "details": {
         "challenge": "Creating a reproducible, end-to-end ML pipeline that automatically retrains and deploys models as new data arrives.",
@@ -194,10 +248,10 @@
   "experience": [
     {
       "id": "upwork",
-      "role": "AI Engineer",
+      "role": "Freelance AI/ML Engineer",
       "company": "Upwork",
       "period": "Apr 2024 - Present",
-      "description": "Completed 16+ client projects focused on RAG systems, LLM fine-tuning, and chatbot development — maintaining a perfect 5.0/5.0 rating."
+      "description": "18 client projects on RAG systems, LLM fine-tuning, AI agents, and chatbot development. Top Rated with 100% Job Success and a 5.0/5.0 rating."
     },
     {
       "id": "fiverr",

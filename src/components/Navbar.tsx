@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
         {/* Mobile Toggle */}
         <button 
           className="md:hidden text-apple-text p-2 hover:bg-gray-100 rounded-lg transition-colors"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"} aria-expanded={isMenuOpen} onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

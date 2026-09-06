@@ -27,7 +27,7 @@ const Stats: React.FC = () => {
                   <Award size={16} className="text-yellow-400" />
                   <span className="text-gray-200">Upwork Top Rated</span>
                 </div>
-                <h3 className="text-3xl font-semibold mb-2">Excellence in Delivery</h3>
+                <h2 className="text-3xl font-semibold mb-2">Upwork Track Record</h2>
                 <p className="text-gray-400 text-sm max-w-sm">Consistently exceeding client expectations with high-quality, scalable code.</p>
               </div>
 

@@ -75,10 +75,10 @@ const Projects: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <Reveal className="mb-12 text-center md:text-left">
            <h2 className="text-4xl md:text-5xl font-bold text-apple-text tracking-tight mb-4">
-            Selected Work.
+            Selected AI Projects.
           </h2>
           <p className="text-xl text-apple-text-secondary mb-8">
-             Production-ready applications solving real-world problems.
+             Production RAG, AI agent, computer vision, and MLOps applications solving real-world problems.
           </p>
 
           {/* Filter Navigation */}
@@ -117,7 +117,7 @@ const Projects: React.FC = () => {
                 <div className="relative overflow-hidden aspect-video">
                   <img
                     src={project.imageUrls[0]}
-                    alt={project.title}
+                    alt={`${project.title} – ${project.category} project screenshot`}
                     loading="lazy"
                     decoding="async"
                     className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -129,6 +129,7 @@ const Projects: React.FC = () => {
                   <button 
                     className="absolute top-4 right-4 bg-white/90 backdrop-blur-md p-2 rounded-full text-apple-dark opacity-0 group-hover:opacity-100 transform translate-y-[-10px] group-hover:translate-y-0 transition-all duration-300 shadow-lg hover:bg-white"
                     title="View Fullscreen"
+                    aria-label={`View ${project.title} gallery fullscreen`}
                   >
                     <Maximize2 size={20} />
                   </button>
@@ -183,8 +184,14 @@ const Projects: React.FC = () => {
                     {expandedId === project.id ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
                   </button>
                   {project.link && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-gray-400 hover:text-apple-text transition-colors">
-                      <ExternalLink size={16} /> view code
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} source code on GitHub`}
+                      className="flex items-center gap-2 text-gray-400 hover:text-apple-text transition-colors"
+                    >
+                      <ExternalLink size={16} /> View code on GitHub
                     </a>
                   )}
                 </div>
@@ -233,6 +240,7 @@ const Projects: React.FC = () => {
           {/* Close Button */}
           <button 
             onClick={closeLightbox}
+            aria-label="Close gallery"
             className="absolute top-6 right-6 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 p-2 rounded-full transition-all"
           >
             <X size={24} />
@@ -241,6 +249,7 @@ const Projects: React.FC = () => {
           {/* Navigation - Prev */}
           <button 
             onClick={(e) => { e.stopPropagation(); navigateLightbox('prev'); }}
+            aria-label="Previous image"
             className="absolute left-4 md:left-8 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all backdrop-blur-md"
           >
              <ChevronLeft size={24} />
@@ -268,11 +277,12 @@ const Projects: React.FC = () => {
                  <button 
                    key={idx}
                    onClick={(e) => { e.stopPropagation(); setLightbox({...lightbox, imageIndex: idx}) }}
+                   aria-label={`Show image ${idx + 1}`}
                    className={`w-12 h-12 md:w-16 md:h-16 flex-shrink-0 rounded-lg overflow-hidden border-2 transition-all ${
                      idx === lightbox.imageIndex ? 'border-apple-blue opacity-100 scale-110' : 'border-transparent opacity-50 hover:opacity-100'
                    }`}
                  >
-                   <img src={url} alt="thumb" className="w-full h-full object-cover" />
+                   <img src={url} alt={`${currentProjectForLightbox.title} thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
                  </button>
                ))}
              </div>
@@ -281,6 +291,7 @@ const Projects: React.FC = () => {
           {/* Navigation - Next */}
           <button 
             onClick={(e) => { e.stopPropagation(); navigateLightbox('next'); }}
+            aria-label="Next image"
             className="absolute right-4 md:right-8 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 p-3 rounded-full transition-all backdrop-blur-md"
           >
              <ChevronRight size={24} />

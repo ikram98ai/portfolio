@@ -60,8 +60,8 @@ const Expertise: React.FC = () => {
             What I Can Build.
           </h2>
           <p className="text-xl md:text-2xl text-gray-400 font-light">
-            End-to-end intelligence. From architectural blueprints to
-            production-ready deployment.
+            AI agents, RAG systems, LLM fine-tuning, and full-stack AI apps,
+            from architecture to production deployment on AWS.
           </p>
         </Reveal>
 

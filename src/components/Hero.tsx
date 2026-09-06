@@ -88,20 +88,26 @@ const Hero: React.FC = () => {
           transformStyle: 'preserve-3d',
         }}
       >
-        <h2
+        <p
           className="text-xl md:text-2xl font-medium text-transparent bg-clip-text bg-linear-to-r from-apple-blue via-purple-600 to-apple-blue text-shimmer mb-6 opacity-0 animate-fade-in-up"
           style={{ animationDelay: '0.1s' }}
         >
-          {personalInfo.title}
-        </h2>
+          {personalInfo.name} · {personalInfo.title}
+        </p>
 
         <h1
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-apple-text mb-8 opacity-0 animate-fade-in-up"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-apple-text mb-4 opacity-0 animate-fade-in-up"
           style={{ animationDelay: '0.3s', transform: 'translateZ(50px)' }}
         >
-          Intelligence. <br />
-          <span className="text-gray-400">Architected.</span>
+          {personalInfo.headline}
         </h1>
+
+        <p
+          className="text-2xl md:text-4xl font-semibold tracking-tight text-gray-400 mb-8 opacity-0 animate-fade-in-up"
+          style={{ animationDelay: '0.4s', transform: 'translateZ(40px)' }}
+        >
+          {personalInfo.headlineAccent}
+        </p>
 
         <p
           className="text-lg md:text-2xl text-apple-text-secondary max-w-2xl mx-auto leading-relaxed opacity-0 animate-fade-in-up"
@@ -127,6 +133,14 @@ const Hero: React.FC = () => {
           >
             View Projects{' '}
             <span className="group-hover:translate-x-1 transition-transform">→</span>
+          </a>
+          <a
+            href={personalInfo.contact.upwork}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-apple-text text-white px-6 py-3 rounded-full text-lg font-medium hover:bg-black transition-colors"
+          >
+            Hire me on Upwork
           </a>
         </div>
       </div>
